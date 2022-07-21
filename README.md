@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -39,4 +39,4 @@ project event GMAD FEB UGM 2022
 
 - Framework front end: NEXT.JS
 - Framework CSS: Tailwind
->>>>>>> 8bd9bd199e401c302bb3292c19020c12cd18798b
+
