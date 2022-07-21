@@ -29,8 +29,8 @@ function Navbar() {
                     // loader={myLoader}
                     src={Logo}
                     alt="GMAD2022"
-                    width={256}
-                    height={91}
+                    width={196}
+                    height={70}
                   />
                 
               </div>
