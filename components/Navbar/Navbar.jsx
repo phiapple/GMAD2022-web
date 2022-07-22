@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link } from "next/link";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
@@ -62,8 +62,10 @@ function Navbar() {
                         <div className="py-1">
                           <Menu.Item>
                             {({ active }) => (
-                              <a
-                                href="/nao"
+                              <button
+                                // href="/nao"
+                                type="button"
+                                onClick={() => router.push("/nao")}
                                 className={classNames(
                                   active
                                     ? "bg-gray-100 text-gray-900"
@@ -72,13 +74,15 @@ function Navbar() {
                                 )}
                               >
                                 NAO
-                              </a>
+                              </button>
                             )}
                           </Menu.Item>
                           <Menu.Item>
                             {({ active }) => (
-                              <a
-                                href="/Atalks"
+                              <button
+                                // href="/Atalks"
+                                type="button"
+                                onClick={() => router.push("/Atalks")}
                                 className={classNames(
                                   active
                                     ? "bg-gray-100 text-gray-900"
@@ -87,7 +91,7 @@ function Navbar() {
                                 )}
                               >
                                 A Talk
-                              </a>
+                              </button>
                             )}
                           </Menu.Item>
                         </div>
@@ -199,8 +203,10 @@ function Navbar() {
                       <div className="py-1">
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="/nao"
+                            <button
+                              // href="/nao"
+                              type="button"
+                              onClick={() => router.push("/nao")}
                               className={classNames(
                                 active
                                   ? "bg-gray-100 text-gray-900"
@@ -209,13 +215,15 @@ function Navbar() {
                               )}
                             >
                               NAO
-                            </a>
+                            </button>
                           )}
                         </Menu.Item>
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="/Atalks"
+                            <button
+                              // href="/Atalks"
+                              type="button"
+                              onClick={() => router.push("/Atalks")}
                               className={classNames(
                                 active
                                   ? "bg-gray-100 text-gray-900"
@@ -224,7 +232,7 @@ function Navbar() {
                               )}
                             >
                               A Talk
-                            </a>
+                            </button>
                           )}
                         </Menu.Item>
                       </div>
