@@ -1,13 +1,15 @@
-import React, { useState } from "react";
-// import {Transition} from '@headlessui/react'
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { useRouter } from "next/router";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import classNames from "classnames";
 import Image from "next/image";
 import Logo from "../../assets/logo/GMADoren.png";
-import Register from "../../pages/register.js"
+import Register from "../../pages/register";
+import nao from "../../pages/nao";
+import atalks from "../../pages/Atalks";
 
 const navigation = [
   { name: "Home", href: "../../pages/index.js", current: true },
@@ -18,6 +20,10 @@ const navigation = [
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  // const [actived, setActived] = useState('text-gray-700')
+
+  // useEffect(() =>setActived('bg-gray-100 text-gray-900'), [])
   return (
     <div>
       {/* container */}
@@ -26,31 +32,22 @@ function Navbar() {
           <div className="flex item-center h-center w-full">
             <div className="flex items items-center mx-20 justify-between w-full">
               <div className="flex justify-center items-center flex-shrink-0">
-                <Image
-                  // loader={myLoader}
-                  src={Logo}
-                  alt="GMAD2022"
-                  width={196}
-                  height={70}
-                />
+                <Image src={Logo} alt="GMAD2022" width={196} height={70} />
               </div>
               <div className="hidden md:block">
                 <div className=" ml-10 flex items-baseline space-x-4 origin-top-right">
-                  {/* {navigation.map((item, index) =>(
-                    <Link href={item.href} key={index}>{item.nama}</Link>
-                  ))} */}
-                  
-                    
-                      <Link href="/">
-                      <a
-                        className="cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded"
-                        >
-                        Home
-                      </a>
-                      </Link>
-                    
-                    
-                    <Menu as="div" className="relative inline-block text-left cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded">
+                  <button
+                    type="button"
+                    onClick={() => router.push("/")}
+                    className="cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded"
+                  >
+                    Home
+                  </button>
+
+                  <Menu
+                    as="div"
+                    className="relative inline-block text-left cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded"
+                  >
                     <Menu.Button>Events</Menu.Button>
                     <Transition
                       as={Fragment}
@@ -65,9 +62,8 @@ function Navbar() {
                         <div className="py-1">
                           <Menu.Item>
                             {({ active }) => (
-                              //fix this after sleep
-                              <Link
-                                href="/"
+                              <a
+                                href="/nao"
                                 className={classNames(
                                   active
                                     ? "bg-gray-100 text-gray-900"
@@ -76,15 +72,13 @@ function Navbar() {
                                 )}
                               >
                                 NAO
-                              </Link>
-                              
+                              </a>
                             )}
                           </Menu.Item>
                           <Menu.Item>
                             {({ active }) => (
-                              
-                              <Link
-                                href="/"
+                              <a
+                                href="/Atalks"
                                 className={classNames(
                                   active
                                     ? "bg-gray-100 text-gray-900"
@@ -93,73 +87,29 @@ function Navbar() {
                                 )}
                               >
                                 A Talk
-                              </Link>
-                              
+                              </a>
                             )}
                           </Menu.Item>
                         </div>
                       </Menu.Items>
                     </Transition>
                   </Menu>
-                  
-                  
-                  
-                  <Link href="/register">
-                  <a
-                    
+
+                  <button
+                    type="button"
+                    onClick={() => router.push("/register")}
                     className="cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded"
                   >
                     Registration
-                  </a>
-                  </Link>
-                  <Link href="/contactus">
-                  <a
-                    href="../../pages/_contactUs.js"
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => router.push("/contactUs")}
                     className="cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded"
                   >
                     Contact Us
-                  </a>
-                  </Link>
-                  {/* <Link
-                    activeClass="Home"
-                    to="Home"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    activeClass="Events"
-                    to="Events"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded"
-                  >
-                    Events
-                  </Link>
-                  <Link
-                    activeClass="Registration"
-                    to="Registration"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded"
-                  >
-                    Registration
-                  </Link>
-                  <Link
-                    activeClass="ContacUs"
-                    to="ContacUs"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded"
-                  >
-                    Contact Us
-                  </Link> */}
+                  </button>
                 </div>
               </div>
             </div>
@@ -224,115 +174,78 @@ function Navbar() {
                 className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
                 ref={ref}
               >
-                <a
-                  href="#"
+                <button
+                  type="button"
+                  onClick={() => router.push("/")}
                   className="cursor-pointer hover:bg-green-dark hover:text-white text-green-dark block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
-                </a>
-                <Menu as="div" className="relative text-left cursor-pointer hover:bg-green-dark hover:text-white text-green-dark block px-3 py-2 rounded-md text-base font-medium">
-                    <Menu.Button>Events</Menu.Button>
-                    <Transition
-                      as={Fragment}
-                      enter="transition ease-out duration-100"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
-                      leave="transition ease-in duration-100"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
-                    >
-                      <Menu.Items className="origin-top-left relative left-0 mt-2 w-56 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none hover:bg-green-light">
-                        <div className="py-1">
-                          <Menu.Item>
-                            {({ active }) => (
-                              <a
-                                href="#"
-                                className={classNames(
-                                  active
-                                    ? "bg-gray-100 text-gray-900"
-                                    : "text-gray-700",
-                                  "block px-4 py-2 text-sm text-green-dark"
-                                )}
-                              >
-                                NAO
-                              </a>
-                            )}
-                          </Menu.Item>
-                          <Menu.Item>
-                            {({ active }) => (
-                              <a
-                                href="#"
-                                className={classNames(
-                                  active
-                                    ? "bg-gray-100 text-gray-900"
-                                    : "text-gray-700",
-                                  "block px-4 py-2 text-sm"
-                                )}
-                              >
-                                A Talk
-                              </a>
-                            )}
-                          </Menu.Item>
-                        </div>
-                      </Menu.Items>
-                    </Transition>
-                  </Menu>
-                <a
-                  href={Register}
+                </button>
+                <Menu
+                  as="div"
+                  className="relative text-left cursor-pointer hover:bg-green-dark hover:text-white text-green-dark block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  <Menu.Button>Events</Menu.Button>
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-100"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                    <Menu.Items className="origin-top-left relative left-0 mt-2 w-56 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none hover:bg-green-light">
+                      <div className="py-1">
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="/nao"
+                              className={classNames(
+                                active
+                                  ? "bg-gray-100 text-gray-900"
+                                  : "text-gray-700",
+                                "block px-4 py-2 text-sm text-green-dark"
+                              )}
+                            >
+                              NAO
+                            </a>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="/Atalks"
+                              className={classNames(
+                                active
+                                  ? "bg-gray-100 text-gray-900"
+                                  : "text-gray-700",
+                                "block px-4 py-2 text-sm"
+                              )}
+                            >
+                              A Talk
+                            </a>
+                          )}
+                        </Menu.Item>
+                      </div>
+                    </Menu.Items>
+                  </Transition>
+                </Menu>
+                <button
+                  type="button"
+                  onClick={() => router.push("/register")}
                   className="cursor-pointer hover:bg-green-dark hover:text-white text-green-dark block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Registration
-                </a>
-                <a
-                  href="#"
+                </button>
+                <button
+                  type="button"
+                  onClick={() => router.push("/contactUs")}
+                  // href="../../pages/_contactUs.js"
                   className="cursor-pointer hover:bg-green-dark hover:text-white text-green-dark block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact Us
-                </a>
-                {/* <Link
-                  href="/home"
-                  activeClass="home"
-                  to="home"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-green-dark hover:text-white text-green-dark block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/Events"
-                  activeClass="Events"
-                  to="Events"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-green-dark text-green-dark hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Events
-                </Link>
-                <Link
-                  href="/Registration"
-                  activeClass="Registration"
-                  to="home"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-green-dark text-green-dark hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Registration
-                </Link>
-                <Link
-                  href="/ContactUs"
-                  activeClass="ContactUs"
-                  to="ContactUs"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-green-dark text-green-dark hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Contact Us
-                </Link> */}
+                </button>
               </div>
             </div>
           )}
