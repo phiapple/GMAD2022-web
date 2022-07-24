@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   purge: [
-    "./pages/**/*.{jsx, js, ts, tsx}",
+    "./pages/**/*.{jsx,js,ts,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
 
@@ -16,6 +16,10 @@ module.exports = {
           yellow: {
             DEFAULT: "#FCEB8F",
           }
+        },
+        fontFamily: {
+          chromate: 'Chromate, cursive',
+          gogh: 'Gogh, medium',
         }
       },
     },
