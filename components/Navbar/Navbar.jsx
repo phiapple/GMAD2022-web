@@ -9,7 +9,7 @@ import Image from "next/image";
 import Logo from "../../assets/logo/GMADoren.png";
 import Register from "../../pages/register";
 import nao from "../../pages/nao";
-import atalks from "../../pages/Atalks";
+import atalks from "../../pages/atalks";
 
 const navigation = [
   { name: "Home", href: "../../pages/index.js", current: true },
@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <div>
       {/* container */}
-      <nav className="shadow-sm fixed w-full z-10 p-0 mx-auto block">
+      <nav className="shadow-sm sticky w-full z-10 p-0 mx-auto block">
         <div className="w-full p-0 mx-auto bg-green-dark">
           <div className="flex item-center h-center w-full">
             <div className="flex items items-center mx-20 justify-between w-full font-gogh">
@@ -89,7 +89,7 @@ function Navbar() {
                               <button
                                 // href="/Atalks"
                                 type="button"
-                                onClick={() => router.push("/Atalks")}
+                                onClick={() => router.push("/atalks")}
                                 className={classNames(
                                   active
                                     ? "bg-green-dark text-yellow"

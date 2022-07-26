@@ -4,6 +4,18 @@ import Navbar from "../components/Navbar/Navbar";
 import ProfileCard from "../components/Card/ProfileCard";
 import ThemeCard from "../components/Card/ThemeCard"
 
+const theme1 = {
+  title: "webinar",
+  ytext: "Accountings's Role:",
+  wtext: "Providing Relevant and Timely Information for Corporate Investment"
+}
+
+const theme2 = {
+  title: "talkshow",
+  ytext: "Small Business Survival:",
+  wtext: "Maximizing Financial Growth From Accounting Perspective"
+}
+
 function Atalks() {
   return (
     <>
@@ -43,15 +55,15 @@ function Atalks() {
           <div className=" block text-center items-center mx-10 md:mx-80">
 
 
-            <div className="container relative pt-28 pb-8 max-w-3xl test-2">
+            <div className="container relative pt-8 md:pt-28 pb-8 md:pb-10 max-w-3xl test-2">
               <h1 className="text-3xl sm:text-5xl capitalize tracking-widest text-yellow lg:text-7xl font-chromate leading-relaxed outlineText">
                 Subtheme
               </h1>
             </div>
 
             <div className="container">
-                <ThemeCard />
-                <ThemeCard />
+                <ThemeCard title={theme1.title} ytext={theme1.ytext} wtext={theme1.wtext}/>
+                <ThemeCard title={theme2.title} ytext={theme2.ytext} wtext={theme2.wtext}/>
             </div>
             
           </div>
