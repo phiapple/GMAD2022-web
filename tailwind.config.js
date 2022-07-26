@@ -15,6 +15,13 @@ module.exports = {
 					dark: '#0E473E'
 				},
 				'c-yellow': '#FCEB8F'
+			},
+			container: {
+				padding: {
+					DEFAULT: '1rem',
+					sm: '2rem',
+					lg: '4rem'
+				}
 			}
 		}
 	},
