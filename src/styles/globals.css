@@ -1,4 +1,4 @@
-/* ./styles/globals.css */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -122,5 +122,5 @@
 }
 
 * {
-	font-family: 'gogh';
+	font-family: 'gogh', sans-serif;
 }

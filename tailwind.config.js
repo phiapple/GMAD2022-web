@@ -4,8 +4,8 @@ module.exports = {
 	content: ['./src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		fontFamily: {
-			chromate: ['Chromate'],
-			Gogh: ['Gogh']
+			chromate: ['Chromate', 'serif'],
+			Gogh: ['Gogh', 'sans-serif']
 		},
 		extend: {
 			colors: {
