@@ -2,7 +2,8 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import ProfileCard from "../components/Card/ProfileCard";
-import ThemeCard from "../components/Card/ThemeCard"
+import ThemeCard from "../components/Card/ThemeCard";
+import ComingSoon from "../components/Section/ComingSoon"
 
 const theme1 = {
   title: "webinar",
@@ -48,8 +49,12 @@ function Atalks() {
         </section>
         {/* end section landing page */}
 
+        {/* section coming soon */}
+        <ComingSoon />
+        {/* end section coming soon */}
+
         {/* section subtheme */}
-        <section className="h-screen atalks-bgImg-2">
+        {/* <section className="h-screen atalks-bgImg-2">
           <div className="atalks-bg-2 h-full">
           <div className="  h-full items-center justify-center mx-auto block md:max-w-screen ">
           <div className=" block text-center items-center mx-10 md:mx-80">
@@ -69,7 +74,7 @@ function Atalks() {
           </div>
         </div>
           </div>
-        </section>
+        </section> */}
         {/* end section subtheme */}
 
         {/* <div className=" flex justify-center ">
