@@ -23,6 +23,17 @@ const EVENTS = [
 	}
 ];
 
+const SOCIAL_MEDIAS = [
+	{
+		name: 'Instagram GMAD',
+		imageUrl: '/images/homepage/sosmed-instagram.png'
+	},
+	{
+		name: 'OA Line GMAD',
+		imageUrl: '/images/homepage/sosmed-line.png'
+	}
+];
+
 export default function Home() {
 	return (
 		<DefaultLayout title="GMAD 2022">
@@ -95,7 +106,7 @@ export default function Home() {
 					<div className="mt-2 text-white font-medium text-center">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					</div>
-					<div className="grid grid-cols-2 gap-12 px-28 mt-16">
+					<div className="grid grid-cols-2 gap-12 mt-16 max-w-6xl mx-auto">
 						{EVENTS.map((event, index) => (
 							<MainEventCard
 								key={index}
@@ -107,6 +118,31 @@ export default function Home() {
 								buttonText={event.buttonText}
 								buttonPushTo={event.buttonPushTo}
 							/>
+						))}
+					</div>
+				</div>
+			</section>
+
+			{/* seciton 4: social media */}
+			<section className="py-24 bg-green-light text-p1">
+				<div className="container outline mx-auto">
+					<h1 className="font-chromate text-c-yellow text-h3 lg:text-h1 text-center -my-6">
+						Social Media
+					</h1>
+					<div className="mt-2 text-white font-medium text-center">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					</div>
+					<div className="grid grid-cols-2 gap-12 mt-16 max-w-3xl mx-auto">
+						{SOCIAL_MEDIAS.map((sosmed, index) => (
+							<div key={index} className="shadow-2xl">
+								<Image
+									src={sosmed.imageUrl}
+									alt={sosmed.name}
+									height={821}
+									width={379}
+									className="rounded-3xl"
+								/>
+							</div>
 						))}
 					</div>
 				</div>
