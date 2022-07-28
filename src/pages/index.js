@@ -4,8 +4,11 @@ import Image from 'next/image';
 export default function Home() {
 	return (
 		<DefaultLayout title="GMAD 2022">
+			{/* navbar height */}
 			<div className="h-[70px]"></div>
-			<section className="grid place-content-center min-h-screen bg-green-light">
+
+			{/* section 1 */}
+			<section className="grid place-content-center min-h-screen bg-green-dark">
 				<div className="flex flex-col-reverse md:flex-row justify-center container w-full outline items-center md:space-y-0 md:space-x-8">
 					<div className="md:w-[70%] lg:w-60% space-y-6">
 						<h1 className="font-chromate text-c-yellow text-4xl md:text-5xl lg:text-6xl">
@@ -30,6 +33,21 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="h-[90px]"></div>
+			</section>
+
+			{/* section 2 */}
+			<section className="py-24 bg-green-light">
+				<div className="container outline mx-auto">
+					<h1 className="font-chromate text-c-yellow text-4xl md:text-5xl lg:text-6xl text-center">
+						Grand Theme
+					</h1>
+					<div className="mt-2 text-lg text-white font-medium text-center">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					</div>
+					<div className="stroke-gradient-1 mt-8 rounded-2xl bg-gradient-to-br from-[rgba(255,255,255,0.2)] to-green-light p-8">
+						halo
+					</div>
+				</div>
 			</section>
 		</DefaultLayout>
 	);
