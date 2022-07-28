@@ -57,10 +57,18 @@ export default function Footer() {
 					/>
 				</div>
 				<div className="grid grid-cols-4 gap-4 text-white">
-					<FaInstagram className="h-12 w-12 bg-c-blue-logo p-3 rounded-full" />
-					<FaFacebook className="h-12 w-12 bg-c-blue-logo p-3 rounded-full" />
-					<FaTwitter className="h-12 w-12 bg-c-blue-logo p-3 rounded-full" />
-					<FaLinkedin className="h-12 w-12 bg-c-blue-logo p-3 rounded-full" />
+					<a href="https://instagram.com/" target="_blank" rel="noreferrer">
+						<FaInstagram className="h-12 w-12 bg-c-blue-logo p-3 rounded-full cursor-pointer hover:scale-105" />
+					</a>
+					<a href="https://facebook.com/" target="_blank" rel="noreferrer">
+						<FaFacebook className="h-12 w-12 bg-c-blue-logo p-3 rounded-full cursor-pointer hover:scale-105" />
+					</a>
+					<a href="https://twitter.com/" target="_blank" rel="noreferrer">
+						<FaTwitter className="h-12 w-12 bg-c-blue-logo p-3 rounded-full cursor-pointer hover:scale-105" />
+					</a>
+					<a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+						<FaLinkedin className="h-12 w-12 bg-c-blue-logo p-3 rounded-full cursor-pointer hover:scale-105" />
+					</a>
 				</div>
 			</footer>
 		</>
