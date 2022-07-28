@@ -11,6 +11,9 @@ module.exports = {
 		extend: {
 			colors: {
 				current: 'currentColor',
+				'c-blue': {
+					logo: '#006970'
+				},
 				green: {
 					light: '#157067',
 					dark: '#0E473E'
@@ -29,7 +32,12 @@ module.exports = {
 				h2: ['70px', 'auto'],
 				h3: ['55px', 'auto'],
 				h4: ['40px', 'auto'],
-				p1: ['34px', 'auto']
+				p1: ['34px', '44px']
+			},
+			backgroundImage: {
+				register: `url('/images/bg/bg-register.png')`,
+				nao1: `url('/images/bg/bg-nao-1.png')`,
+				nao2: `url('/images/bg/bg-nao-2.png')`
 			}
 		}
 	},
