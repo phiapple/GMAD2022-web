@@ -183,15 +183,15 @@
 	.atalks-bgImg-1 {
 		/* width: 1920px;
 	  height: 1080px; */
-		background: url('../assets/bg/bg-Atalks1.png') no-repeat center;
+		background: url('../../public/images/bg/bg-Atalks1.png') no-repeat center;
 	}
 
 	.atalks-bgImg-2 {
-		background: url('../assets/bg/bg-Atalks2.png') no-repeat center;
+		background: url('../../public/images/bg/bg-Atalks2.png') no-repeat center;
 	}
 
 	.comingSoon-bgImg {
-		background: url('../assets/bg/bg-ComingSoon.png') no-repeat center;
+		background: url('../../public/images/bg/bg-ComingSoon.png') no-repeat center;
 	}
 
 	.comingSoon-bg {
@@ -204,5 +204,40 @@
 		opacity: 0.9;
 		filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.15));
 		border-radius: 120px;
+	}
+
+	.contactUs-bg {
+		background: linear-gradient(180deg, #1a6c63 0%, #134943 100%);
+		/* max-width: 1920px; */
+		/* height: 520px; */
+	}
+	.contactUsBox-bg {
+		background: rgba(252, 235, 143, 0.7);
+		/* border-radius: 85px; */
+
+		max-width: 1604px;
+		/* height: 520px; */
+		/* border-radius: 85px; */
+	}
+
+	.contactUsBox-bgImg {
+		max-width: 1604px;
+		/* height: 520px; */
+
+		background: url('../../public/images/bg/bg-ContactUsBox.png') no-repeat
+			center;
+	}
+
+	.pastPartner-bg {
+		background: linear-gradient(
+			180deg,
+			rgba(14, 71, 62, 0.9) 0%,
+			rgba(15, 71, 62, 0.9) 53.62%,
+			rgba(15, 71, 62, 0.97) 100%
+		);
+	}
+	.pastPartner-bgImg {
+		background: url('../../public/images/bg/bg-PastPartner.png') no-repeat
+			center;
 	}
 }

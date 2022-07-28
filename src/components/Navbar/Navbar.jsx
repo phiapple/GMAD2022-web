@@ -1,22 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'next/link';
+
 import { useRouter } from 'next/router';
 import { Fragment } from 'react';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
+import {  Menu, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
-import Logo from '../../assets/logo/GMADoren.png';
-import Register from '../../pages/register';
-import nao from '../../pages/nao';
-import atalks from '../../pages/Atalks';
 
-const navigation = [
-	{ name: 'Home', href: '../../pages/index.js', current: true },
-	{ name: 'Events', href: '#', current: false },
-	{ name: 'Registration', href: '../../pages/_register.js', current: false },
-	{ name: 'ContactUs', href: '../../pages/_contactUs.js', current: false }
-];
+
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -25,14 +16,14 @@ function Navbar() {
 
 	// useEffect(() =>setActived('bg-gray-100 text-gray-900'), [])
 	return (
-		<div>
+		<div className="sticky top-0 bg-green-light z-[9999]">
 			{/* container */}
-			<nav className="shadow-sm sticky w-full z-10 p-0 mx-auto">
+			<nav className="shadow-sm w-full z-10 p-0 mx-auto">
 				<div className="w-full p-0 mx-auto bg-green-dark">
 					<div className="flex item-center h-center w-full">
 						<div className="flex items items-center mx-20 justify-between w-full">
 							<div className="flex justify-center items-center flex-shrink-0">
-								<Image src={Logo} alt="GMAD2022" width={196} height={70} />
+								<Image src="/images/logo/GMADoren.png" alt="GMAD2022" width={196} height={70} />
 							</div>
 							<div className="hidden md:block">
 								<div className=" ml-10 flex items-baseline space-x-4 origin-top-right">
@@ -48,7 +39,7 @@ function Navbar() {
 										as="div"
 										className="relative inline-block text-left cursor-pointer text-white font-semibold px-3 py-2 text-md hover:bg-green-light rounded"
 									>
-										<Menu.Button>
+										<Menu.Button >
 											Events
 											<ChevronDownIcon
 												className="inline ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
