@@ -155,11 +155,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-
-			{/* coba */}
-			<div className="outline px-32 bg-red-300">
-				<AnimeLogo />
-			</div>
 		</DefaultLayout>
 	);
 }
