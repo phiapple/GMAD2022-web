@@ -25,9 +25,9 @@ function Navbar() {
 
 	// useEffect(() =>setActived('bg-gray-100 text-gray-900'), [])
 	return (
-		<div>
+		<div className="sticky top-0 bg-green-light z-[9999]">
 			{/* container */}
-			<nav className="shadow-sm sticky w-full z-10 p-0 mx-auto">
+			<nav className="shadow-sm w-full z-10 p-0 mx-auto">
 				<div className="w-full p-0 mx-auto bg-green-dark">
 					<div className="flex item-center h-center w-full">
 						<div className="flex items items-center mx-20 justify-between w-full">
