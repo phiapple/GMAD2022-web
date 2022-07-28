@@ -1,3 +1,4 @@
+import AnimeLogo from 'components/Anime/AnimeLogo';
 import MainEventCard from 'components/Card/MainEventCard';
 import DefaultLayout from 'components/DefaultLayout/DefaultLayout';
 import Image from 'next/image';
@@ -40,7 +41,11 @@ export default function Home() {
 			{/* section 1: gmad */}
 			<section className="grid place-content-center min-h-screen bg-green-dark text-p1">
 				<div className="flex flex-col-reverse md:flex-row justify-center container w-full outline items-center md:space-y-0 md:space-x-8">
-					<div className="md:w-[70%] lg:w-[60%] space-y-6">
+					<div
+						className="md:w-[70%] lg:w-[60%] space-y-6"
+						data-aos="fade-right"
+						data-aos-delay="3000"
+					>
 						<h1 className="font-chromate text-c-yellow text-h3 lg:text-h1">
 							Lorem Ipsum
 						</h1>
@@ -52,21 +57,24 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="max-w-[40vh] mb-8 md:mb-0">
-						<Image
-							src="/images/logo/gmad-white-vertical.svg"
-							alt="GMAD logo"
-							height={500}
-							width={450}
-							objectFit="contain"
-							objectPosition="center"
-						/>
+						<AnimeLogo />
+						<div className="-mt-12" data-aos-delay="2800" data-aos="fade-left">
+							<Image
+								src="/images/logo/gmad-text-white.svg"
+								alt="GMAD logo"
+								height={200}
+								width={450}
+								objectFit="contain"
+								objectPosition="center"
+							/>
+						</div>
 					</div>
 				</div>
 				<div className="h-[90px]"></div>
 			</section>
 
 			{/* section 2: grand theme */}
-			<section className="py-24 bg-green-light text-p1">
+			<section className="py-24 bg-green-light text-p1" data-aos="fade-right">
 				<div className="container outline mx-auto">
 					<h1 className="font-chromate text-c-yellow text-h3 lg:text-h1 text-center -my-6">
 						Grand Theme
@@ -147,6 +155,11 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			{/* coba */}
+			<div className="outline px-32 bg-red-300">
+				<AnimeLogo />
+			</div>
 		</DefaultLayout>
 	);
 }
