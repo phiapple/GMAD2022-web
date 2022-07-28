@@ -127,7 +127,6 @@ function nao() {
 					</style>
 					<Swiper
 						loop
-						reverseDirection={true}
 						slidesPerView={3}
 						spaceBetween={10}
 						pagination={{
@@ -160,8 +159,8 @@ function nao() {
 					</Swiper>
 				</div>
 			</div>
-			<div className="relative h-[180vh] w-full bg-nao2">
-				<div className="absolute w-full h-full bg-green-dark/90"></div>
+			<div className="relative h-[180vh] w-full bg-nao2 bg-cover bg-no-repeat">
+				<div className="absolute w-full h-full bg-gradient-to-b from-green-dark/90 to-green-light/90"></div>
 				<div className="absolute z-10 w-full h-full p-36 flex flex-col gap-60 items-center justify-center ">
 					<div className="flex flex-col items-center justify-center gap-10">
 						<h1 className="font-chromate text-c-yellow outlineText">
