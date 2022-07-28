@@ -1,3 +1,4 @@
+import Footer from 'components/Footer';
 import Navbar from 'components/Navbar/Navbar';
 import Head from 'next/head';
 
@@ -10,6 +11,7 @@ export default function DefaultLayout({ title = 'GMAD 2022', children }) {
 			</Head>
 			<Navbar />
 			<main>{children}</main>
+			<Footer />
 		</div>
 	);
 }
