@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import ProfileCard from "../components/Card/ProfileCard";
 import ThemeCard from "../components/Card/ThemeCard";
 import ComingSoon from "../components/Section/ComingSoon"
+import ContactUs from "../components/Section/ContactUs";
 
 const theme1 = {
   title: "webinar",
@@ -31,13 +32,13 @@ function Atalks() {
       <Navbar />
 
       {/* section landing page */}
-      <section className="  h-screen atalks-bgImg-1">
+      <section className="  h-screen atalks-bgImg-1 bg-cover">
         <div className="  h-full items-center justify-center mx-auto block md:max-w-screen  atalks-bg-1">
           <div className=" block text-center items-center mx-10 md:mx-80">
 
 
             <div className="pt-60  ">
-              <h1 className="max-w-3xl text-3xl sm:text-5xl capitalize tracking-widest text-c-yellow lg:text-7xl font-chromate leading-relaxed outlineText mx-auto">
+              <h1 className="max-w-3xl text-4xl sm:text-5xl capitalize tracking-widest text-c-yellow lg:text-7xl font-chromate leading-relaxed outlineText mx-auto">
                 Accounting Talks (A-Talks)
               </h1>
             </div>
@@ -82,6 +83,8 @@ function Atalks() {
           <ProfileCard />
           <ProfileCard />
         </div> */}
+
+        <ContactUs />
       
     </>
   );
