@@ -206,15 +206,15 @@
 .atalks-bgImg-1 {
 	/* width: 1920px;
   height: 1080px; */
-	background: url('../assets/bg/bg-Atalks1.png') no-repeat center;
+	background: url('../../public/images/bg/bg-Atalks1.png') no-repeat center;
 }
 
 .atalks-bgImg-2 {
-	background: url('../assets/bg/bg-Atalks2.png') no-repeat center;
+	background: url('../../public/images/bg/bg-Atalks2.png') no-repeat center;
 }
 
 .comingSoon-bgImg {
-	background: url('../assets/bg/bg-ComingSoon.png') no-repeat center;
+	background: url('../../public/images/bg/bg-ComingSoon.png') no-repeat center;
 }
 
 .comingSoon-bg {
