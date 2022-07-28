@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
 	mode: 'jit',
 	content: ['./src/**/*.{js,ts,jsx,tsx}'],
@@ -22,6 +23,13 @@ module.exports = {
 					sm: '2rem',
 					lg: '4rem'
 				}
+			},
+			fontSize: {
+				h1: ['91px', 'auto'],
+				h2: ['70px', 'auto'],
+				h3: ['55px', 'auto'],
+				h4: ['40px', 'auto'],
+				p1: ['34px', 'auto']
 			}
 		}
 	},
