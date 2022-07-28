@@ -32,12 +32,19 @@ module.exports = {
 				h2: ['70px', 'auto'],
 				h3: ['55px', 'auto'],
 				h4: ['40px', 'auto'],
-				p1: ['34px', '44px']
+				p1: ['34px', '44px'],
+				'mobile-h1': ['30px', 'auto'],
+				'mobile-h2': ['28px', 'auto'],
+				'mobile-h3': ['24px', 'auto'],
+				'mobile-h4': ['20px', 'auto'],
+				'mobile-p1': ['16px', 'auto']
 			},
 			backgroundImage: {
 				register: `url('/images/bg/bg-register.png')`,
 				nao1: `url('/images/bg/bg-nao-1.png')`,
-				nao2: `url('/images/bg/bg-nao-2.png')`
+				nao2: `url('/images/bg/bg-nao-2.png')`,
+				contactUs: `url('/images/bg/bg-ContactUsBox.png')`,
+				pastPartner: `url('/images/bg/bg-PastPartner.png')`
 			}
 		}
 	},

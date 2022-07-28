@@ -129,23 +129,23 @@
 	}
 
 	h1 {
-		@apply text-h1;
+		@apply text-mobile-h1 lg:text-h1;
 	}
 
 	h2 {
-		@apply text-h2;
+		@apply text-mobile-h2 lg:text-h2;
 	}
 
 	h3 {
-		@apply text-h3;
+		@apply text-mobile-h3 lg:text-h3;
 	}
 
 	h4 {
-		@apply text-h4;
+		@apply text-mobile-h3 lg:text-h4;
 	}
 
 	p {
-		@apply text-p1;
+		@apply text-mobile-p1 lg:text-p1;
 	}
 }
 
@@ -157,8 +157,6 @@
 	);
 }
 .outlineText {
-	font-weight: 400;
-	font-size: 96px;
 	text-shadow: 0px 10px 0.02px #157067, 9.8px 2.1px 0.02px #157067,
 		4.2px -9.1px 0.02px #157067, -8px -6px 0.02px #157067,
 		-7.6px 6.5px 0.02px #157067, 4.8px 8.8px 0.02px #157067,
@@ -243,39 +241,22 @@
 		inset 1px -1px 1px 0px #a8ff75;
 }
 .contactUs-bg {
-		background: linear-gradient(180deg, #1a6c63 0%, #134943 100%);
-		/* max-width: 1920px; */
-		/* height: 520px; */
-	}
-	.contactUsBox-bg {
-		background: rgba(252, 235, 143, 0.7);
-		/* border-radius: 85px; */
+	background: linear-gradient(180deg, #1a6c63 0%, #134943 100%);
+	/* max-width: 1920px; */
+	/* height: 520px; */
+}
 
-		max-width: 1604px;
-		/* height: 520px; */
-		/* border-radius: 85px; */
-	}
-
-	.contactUsBox-bgImg {
-		max-width: 1604px;
-		/* height: 520px; */
-
-		background: url('../../public/images/bg/bg-ContactUsBox.png') no-repeat
-			center;
-	}
-
-	.pastPartner-bg {
-		background: linear-gradient(
-			180deg,
-			rgba(14, 71, 62, 0.9) 0%,
-			rgba(15, 71, 62, 0.9) 53.62%,
-			rgba(15, 71, 62, 0.97) 100%
-		);
-	}
-	.pastPartner-bgImg {
-		background: url('../../public/images/bg/bg-PastPartner.png') no-repeat
-			center;
-	}
+.pastPartner-bg {
+	background: linear-gradient(
+		180deg,
+		rgba(14, 71, 62, 0.9) 0%,
+		rgba(15, 71, 62, 0.9) 53.62%,
+		rgba(15, 71, 62, 0.97) 100%
+	);
+}
+.pastPartner-bgImg {
+	background: url('../../public/images/bg/bg-PastPartner.png') no-repeat center;
+}
 
 .text-shadow {
 	text-shadow: 0px 2.24076px 6.72229px rgba(0, 0, 0, 0.4);
