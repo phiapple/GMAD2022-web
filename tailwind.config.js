@@ -11,6 +11,9 @@ module.exports = {
 		extend: {
 			colors: {
 				current: 'currentColor',
+				'c-blue': {
+					logo: '#006970'
+				},
 				green: {
 					light: '#157067',
 					dark: '#0E473E'
