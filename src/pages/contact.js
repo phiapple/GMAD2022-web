@@ -35,7 +35,7 @@ const contact = () => {
 							pr.gmad@ugm.ac.id
 						</h4>
 					</a>
-					<div className="flex flex-row items-center mt-8 space-x-12">
+					<div className="flex flex-row items-center mt-8 space-x-4 md:space-x-12">
 						{SOSMED.map((sosmed, index) => (
 							<a
 								href={sosmed.redirectUrl}
@@ -43,7 +43,7 @@ const contact = () => {
 								rel="noreferrer"
 								key={index}
 							>
-								<div className="w-[100px] h-[100px] p-6 rounded-3xl outline-gradient bg-gradient-to-br hover:bg-gradient-to-tl from-[#1ea396] to-green-light transition-all duration-200">
+								<div className="w-[60px] h-[60px] p-3 md:w-[100px] md:h-[100px] md:p-6 rounded-xl md:rounded-3xl outline-gradient bg-gradient-to-br hover:bg-gradient-to-tl from-[#1ea396] to-green-light transition-all duration-200">
 									<Image
 										src={sosmed.imageUrl}
 										alt={sosmed.name}
