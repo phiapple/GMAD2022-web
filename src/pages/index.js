@@ -27,11 +27,13 @@ const EVENTS = [
 const SOCIAL_MEDIAS = [
 	{
 		name: 'Instagram GMAD',
-		imageUrl: '/images/homepage/sosmed-instagram.png'
+		imageUrl: '/images/homepage/sosmed-instagram.png',
+		redirectUrl: 'https://instagram.com/gmad.ugm'
 	},
 	{
 		name: 'OA Line GMAD',
-		imageUrl: '/images/homepage/sosmed-line.png'
+		imageUrl: '/images/homepage/sosmed-line.png',
+		redirectUrl: 'https://line.me/R/ti/p/@aju6891t?from=page'
 	}
 ];
 
@@ -74,11 +76,17 @@ export default function Home() {
 
 			{/* section 2: grand theme */}
 			<section className="py-24 text-p1 bg-green-light shadow-2xl">
-				<div className="container mx-auto" data-aos="fade-up">
-					<h1 className="font-chromate text-c-yellow text-center pb-8 outlineText2">
+				<div className="container mx-auto">
+					<h1
+						className="font-chromate text-c-yellow text-center pb-8 outlineText2"
+						data-aos="zoom-out"
+					>
 						Grand Theme
 					</h1>
-					<div className="border-[3px] outline-gradient mt-8 rounded-2xl bg-gradient-to-br from-[rgba(255,255,255,0.2)] to-green-light relative">
+					<div
+						className="border-[3px] outline-gradient mt-8 rounded-2xl bg-gradient-to-br from-[rgba(255,255,255,0.2)] to-green-light relative"
+						data-aos="zoom-in"
+					>
 						<div className="grid grid-cols-1 lg:grid-cols-2 p-12">
 							<div className="w-full aspect-video mx-auto rounded-3xl overflow-hidden">
 								<iframe
@@ -107,10 +115,16 @@ export default function Home() {
 			{/* section 3: our main events */}
 			<section className="py-24 text-p1 bg-[url('/images/bg/bg-homepage-3.png')] bg-cover bg-center">
 				<div className="container mx-auto">
-					<h1 className="font-chromate text-c-yellow text-center outlineText2">
+					<h1
+						className="font-chromate text-c-yellow text-center outlineText2"
+						data-aos="zoom-out"
+					>
 						Our Main Events
 					</h1>
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 max-w-6xl mx-auto">
+					<div
+						className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 max-w-6xl mx-auto"
+						data-aos="zoom-in-left"
+					>
 						{EVENTS.map((event, index) => (
 							<MainEventCard
 								key={index}
@@ -130,20 +144,34 @@ export default function Home() {
 			{/* seciton 4: social media */}
 			<section className="py-24 text-p1 bg-[url('/images/bg/bg-homepage-4.png')] bg-cover bg-center">
 				<div className="container mx-auto">
-					<h1 className="font-chromate text-c-yellow text-center outlineText2">
+					<h1
+						className="font-chromate text-c-yellow text-center outlineText2"
+						data-aos="zoom-out"
+					>
 						Social Media
 					</h1>
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 max-w-3xl mx-auto w-full place-items-center">
+					<div
+						className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 max-w-3xl mx-auto w-full place-items-center"
+						data-aos="zoom-in-right"
+					>
 						{SOCIAL_MEDIAS.map((sosmed, index) => (
-							<div key={index} className="drop-shadow-2xl">
-								<Image
-									src={sosmed.imageUrl}
-									alt={sosmed.name}
-									height={821}
-									width={379}
-									className="rounded-3xl"
-								/>
-							</div>
+							<a
+								href={sosmed.redirectUrl}
+								target="_blank"
+								rel="noreferrer"
+								key={index}
+								className="hover:-translate-y-1 drop-shadow-xl hover:drop-shadow-2xl transition-all duration-200"
+							>
+								<div className="">
+									<Image
+										src={sosmed.imageUrl}
+										alt={sosmed.name}
+										height={821}
+										width={379}
+										className="rounded-3xl"
+									/>
+								</div>
+							</a>
 						))}
 					</div>
 				</div>
