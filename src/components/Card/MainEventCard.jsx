@@ -8,6 +8,7 @@ export default function MainEventCard({
 	title,
 	subtitle,
 	body,
+	noButton = false,
 	buttonText,
 	buttonPushTo = '/'
 }) {
@@ -25,16 +26,20 @@ export default function MainEventCard({
 					className="rounded-[32px]"
 				/>
 			</div>
-			<h3 className="text-3xl font-bold drop-shadow-lg">{title}</h3>
-			<h4 className="text-2xl font-bold drop-shadow-lg">{subtitle}</h4>
-			<div className="text-lg">{body}</div>
-			<div className="grow h-2"></div>
-			<div className="flex flex-row justify-end">
-				<OutlineButton
-					onClick={() => router.push(buttonPushTo)}
-					text={buttonText}
-				/>
-			</div>
+			<h3 className="font-bold drop-shadow-lg">{title}</h3>
+			<h4 className="font-bold drop-shadow-lg">{subtitle}</h4>
+			<p className="">{body}</p>
+			{!noButton && (
+				<>
+					<div className="grow h-2"></div>
+					<div className="flex flex-row justify-end">
+						<OutlineButton
+							onClick={() => router.push(buttonPushTo)}
+							text={buttonText}
+						/>
+					</div>
+				</>
+			)}
 		</div>
 	);
 }
