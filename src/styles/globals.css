@@ -141,7 +141,7 @@
 	}
 
 	h4 {
-		@apply text-mobile-h3 lg:text-h4;
+		@apply text-mobile-h4 lg:text-h4;
 	}
 
 	p {

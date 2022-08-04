@@ -33,8 +33,8 @@ module.exports = {
 				h3: ['39.06px', '42px'],
 				h4: ['31.25px', '35px'],
 				p1: ['20px', '30px'],
-				'mobile-h1': ['30px', '32px'],
-				'mobile-h2': ['28px', '30px'],
+				'mobile-h1': ['32px', '35px'],
+				'mobile-h2': ['28px', '31px'],
 				'mobile-h3': ['24px', '26px'],
 				'mobile-h4': ['20px', '22px'],
 				'mobile-p1': ['16px', '24px']
