@@ -167,15 +167,15 @@ function Nao() {
 							return (
 								<SwiperSlide className="h-full" key={index}>
 									<div className="h-[45vh] lg:h-[55vh] w-[40vw] lg:w-[17.5vw] p-4 flex flex-col gap-4 rounded-2xl break-words profile-card outline-gradient">
-										<h1 className="font-bold leading-1 text-c-yellow text-shadow">
+										<h2 className="font-bold leading-1 text-c-yellow text-shadow">
 											{val.date}
-										</h1>
-										<h4 className="font-bold leading-1 text-c-yellow text-shadow">
+										</h2>
+										<p className="font-bold leading-1 text-c-yellow text-shadow">
 											{val.month}
-										</h4>
-										<h4 className="flex-grow font-bold text-white text-shadow">
+										</p>
+										<p className="flex-grow font-bold text-white text-shadow">
 											{val.eventName}
-										</h4>
+										</p>
 										<div className="relative h-[35%] w-full rounded-lg">
 											<Image
 												className="rounded-lg"
@@ -195,10 +195,10 @@ function Nao() {
 					</Swiper>
 				</div>
 			</div>
-			<div className="relative h-[250vh] lg:h-[200vh] w-full bg-nao2 bg-cover bg-no-repeat">
+			<div className="relative h-[200vh] w-full bg-nao2 bg-cover bg-no-repeat">
 				<div className="absolute w-full h-full bg-gradient-to-b from-green-dark/90 to-green-light/90"></div>
 				<div className="absolute z-10 w-full h-full py-20 p-10 lg:p-36 flex flex-col gap-4 lg:gap-60 items-center justify-center ">
-					<div className="flex flex-col lg:flex-row items-center justify-center w-full h-[120vh] lg:h-screen gap-20 lg:gap-10 px-4 lg:px-20">
+					<div className="flex flex-col lg:flex-row items-center justify-center w-full h-screen gap-20 lg:gap-10 px-4 lg:px-20">
 						<div className="flex-1 text-white leading-7">
 							<h4 className="font-bold py-4">Terms and Conditions</h4>
 							Participants who are currently pursuing an accounting
@@ -229,7 +229,7 @@ function Nao() {
 						</div>
 					</div>
 
-					<div className="relative flex flex-col items-center justify-center gap-10 w-screen h-[130vh] lg:h-screen">
+					<div className="relative flex flex-col items-center justify-center gap-10 w-screen h-screen">
 						<div className="absolute top-1/2 md:top-0 -translate-y-1/4 md:translate-y-0 w-full h-screen lg:h-full bg-register-mobile sm:bg-register bg-no-repeat bg-contain"></div>
 						<div className="p-4 h-[60vmin] lg:h-[50vmin] w-[60vmin] lg:w-[50vmin] flex items-center justify-center glassmo rounded-full text-c-yellow outline-gradient cursor-pointer hover:bg-white/20 transition-all hover:scale-110">
 							<a

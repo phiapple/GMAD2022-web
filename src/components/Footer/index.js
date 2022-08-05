@@ -6,24 +6,24 @@ export default function Footer() {
 		<>
 			<section className="px-10 lg:px-36 bg-gradient-to-b from-green-light to-green-dark">
 				<div className=" w-full h-full py-10 rounded-3xl lg:rounded-[85px] bg-c-yellow bg-cover bg-no-repeat">
-					<h1 className="text-center outlineTextMiniDark text-white font-chromate leading-1">
+					<h3 className="text-center outlineTextMiniDark text-white font-chromate leading-1">
 						Contact Us
-					</h1>
+					</h3>
 					<div className="lg:px-10 pt-10 pb-4 flex-grow grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 text-center font-bold">
 						<div className="flex flex-col items-center justify-center gap-1 lg:gap-5">
-							<h3 className="text-green-dark text-shadow-light">Sponsorship</h3>
-							<h3 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">
+							<h4 className="text-green-dark text-shadow-light">Sponsorship</h4>
+							<h4 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">
 								+62-877-3929-1110
-							</h3>
+							</h4>
 							<h4 className="text-green-light">Divanti Ayu Wulandari</h4>
 						</div>
 						<div className="flex flex-col items-center justify-center gap-1 lg:gap-5">
-							<h3 className="text-green-dark text-shadow-light">
+							<h4 className="text-green-dark text-shadow-light">
 								Media Partnership
-							</h3>
-							<h3 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">
+							</h4>
+							<h4 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">
 								+62-8953-6611-1531
-							</h3>
+							</h4>
 							<h4 className="text-green-light">Inas Farrosi Hanandiya</h4>
 						</div>
 					</div>
