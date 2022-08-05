@@ -10,69 +10,77 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
+import Image from 'next/image';
 
 const timelines = [
 	{
-		date: '07',
-		month: 'July',
-		eventName: 'Registration',
-		imgSrc: '',
+		date: '05 - 31',
+		month: 'August',
+		eventName: 'Early Bird Registration',
+		imgSrc: null,
 		link: ''
 	},
 	{
-		date: '07',
-		month: 'July',
-		eventName: 'Registration',
-		imgSrc: '',
+		date: '01 - 16',
+		month: 'September',
+		eventName: 'Regular Registration',
+		imgSrc: null,
 		link: ''
 	},
 	{
-		date: '07',
-		month: 'July',
-		eventName: 'Registration',
-		imgSrc: '',
+		date: '01',
+		month: 'October',
+		eventName: 'Online Preliminary',
+		imgSrc: null,
 		link: ''
 	},
 	{
-		date: '07',
-		month: 'July',
-		eventName: 'Registration',
-		imgSrc: '',
+		date: '03',
+		month: 'October',
+		eventName: 'Top 25 Announcement',
+		imgSrc: null,
 		link: ''
 	},
 	{
-		date: '07',
-		month: 'July',
-		eventName: 'Registration',
-		imgSrc: '',
+		date: '04 - 13',
+		month: 'October',
+		eventName: 'Main Event Registration',
+		imgSrc: null,
 		link: ''
 	},
 	{
-		date: '07',
-		month: 'July',
-		eventName: 'Registration',
-		imgSrc: '',
+		date: '14',
+		month: 'October',
+		eventName: 'Technical Meeting Quarter dan Semifinal',
+		imgSrc: null,
 		link: ''
 	},
 	{
-		date: '07',
-		month: 'July',
-		eventName: 'Registration',
-		imgSrc: '',
+		date: '15 - 16',
+		month: 'October',
+		eventName: 'Main Event : Quarter dan Semifinal	',
+		imgSrc: null,
 		link: ''
 	},
 	{
-		date: '07',
-		month: 'July',
-		eventName: 'Registration',
-		imgSrc: '',
+		date: '21',
+		month: 'October',
+		eventName: 'Technical Meeting Final',
+		imgSrc: null,
 		link: ''
 	},
 	{
-		date: '07',
-		month: 'July',
-		eventName: 'Registration',
-		imgSrc: '',
+		date: '22',
+		month: 'October',
+		eventName: 'Main Event : Final',
+		imgSrc: null,
+		link: ''
+	},
+	{
+		date: '23',
+		month: 'October',
+		eventName: 'Awarding Day',
+		imgSrc: null,
 		link: ''
 	}
 ];
@@ -105,20 +113,22 @@ function Nao() {
 				</div>
 			</div>
 			<div className="h-[120vh] lg:h-screen w-full lg:pl-20 py-36 gap-10 flex flex-col lg:flex-row items-center justify-center bg-green-light max-w-full overflow-hidden">
-				<div className="flex-[1] px-10 lg:px-0 flex flex-col items-center lg:items-start gap-10 text-center lg:text-start">
-					<h2 className="text-green-dark font-bold">2022</h2>
-					<h1 className="font-chromate text-c-yellow">
-						Timeline & Information
-					</h1>
-					<div className="flex gap-5">
-						<IoChevronBack
-							className="p-2 w-10 h-10 rounded-full text-c-yellow border border-c-yellow hover:bg-c-yellow hover:text-green-dark cursor-pointer transition-all"
-							onClick={() => swiper.slidePrev()}
-						/>
-						<IoChevronForward
-							className="p-2 w-10 h-10 rounded-full text-c-yellow border border-c-yellow hover:bg-c-yellow hover:text-green-dark cursor-pointer transition-all"
-							onClick={() => swiper.slideNext()}
-						/>
+				<div className="flex-[1] h-full px-10 lg:px-0 flex items-center">
+					<div className="flex flex-col items-center lg:items-start gap-10 text-center lg:text-start">
+						<h2 className="text-green-dark font-bold">2022</h2>
+						<h1 className="font-chromate text-c-yellow">
+							Timeline & Information
+						</h1>
+						<div className="flex gap-5">
+							<IoChevronBack
+								className="p-2 w-10 h-10 rounded-full text-c-yellow border border-c-yellow hover:bg-c-yellow hover:text-green-dark cursor-pointer transition-all"
+								onClick={() => swiper.slidePrev()}
+							/>
+							<IoChevronForward
+								className="p-2 w-10 h-10 rounded-full text-c-yellow border border-c-yellow hover:bg-c-yellow hover:text-green-dark cursor-pointer transition-all"
+								onClick={() => swiper.slideNext()}
+							/>
+						</div>
 					</div>
 				</div>
 				<div className="flex-[3] w-full h-screen lg:h-full px-5 lg:px-0">
@@ -133,23 +143,21 @@ function Nao() {
 						`}
 					</style>
 					<Swiper
-						loop
+						centeredSlides
 						slidesPerView="auto"
 						spaceBetween={10}
 						pagination={{
 							clickable: true
 						}}
 						modules={[Pagination]}
-						className="w-full lg:w-[60vw] h-[55vh] lg:h-[75vh]"
+						className="w-full lg:w-[60vw] h-[55vh] lg:h-[65vh]"
 						onSwiper={swiper => setSwiper(swiper)}
 						breakpoints={{
-							// when window width is >= 320px
-							320: {
+							100: {
 								slidesPerView: 2,
 								spaceBetween: 20
 							},
-							// when window width is >= 640px
-							640: {
+							1024: {
 								slidesPerView: 3,
 								spaceBetween: 10
 							}
@@ -158,20 +166,28 @@ function Nao() {
 						{timelines.map((val, index) => {
 							return (
 								<SwiperSlide className="h-full" key={index}>
-									<div className="h-[45vh] lg:h-[65vh] w-[40vw] lg:w-[17.5vw] p-4 flex flex-col gap-4 rounded-2xl break-words profile-card outline-gradient">
+									<div className="h-[45vh] lg:h-[55vh] w-[40vw] lg:w-[17.5vw] p-4 flex flex-col gap-4 rounded-2xl break-words profile-card outline-gradient">
 										<h1 className="font-bold leading-1 text-c-yellow text-shadow">
 											{val.date}
 										</h1>
 										<h4 className="font-bold leading-1 text-c-yellow text-shadow">
 											{val.month}
 										</h4>
-										<h4 className="font-bold text-white text-shadow">
+										<h4 className="flex-grow font-bold text-white text-shadow">
 											{val.eventName}
 										</h4>
-										<div className="h-[20%] w-full bg-slate-200 rounded-lg"></div>
-										<button className="p-2 rounded-full border-2 font-medium text-c-yellow border-c-yellow bg-transparent hover:!bg-c-yellow hover:text-green-light cursor-pointer">
+										<div className="relative h-[35%] w-full rounded-lg">
+											<Image
+												className="rounded-lg"
+												src={val.src ?? '/images/bg/placeholder.png'}
+												alt="image preview"
+												layout="fill"
+												objectFit="cover"
+											/>
+										</div>
+										{/* <button className="p-2 rounded-full border-2 font-medium text-c-yellow border-c-yellow bg-transparent hover:!bg-c-yellow hover:text-green-light cursor-pointer transition-all">
 											learn more
-										</button>
+										</button> */}
 									</div>
 								</SwiperSlide>
 							);
