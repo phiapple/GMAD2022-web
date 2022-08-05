@@ -43,8 +43,8 @@ module.exports = {
 				register: `url('/images/bg/bg-register.png')`,
 				nao1: `url('/images/bg/bg-nao-1.png')`,
 				nao2: `url('/images/bg/bg-nao-2.png')`,
-				contactUs: `url('/images/bg/bg-ContactUsBox.png')`,
-				pastPartner: `url('/images/bg/bg-PastPartner.png')`
+				contactUs: `url('/images/bg/bg-ContactUsBox.jpg')`,
+				pastPartner: `url('/images/bg/bg-PastPartner.webp')`
 			}
 		}
 	},

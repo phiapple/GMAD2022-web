@@ -4,34 +4,34 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 export default function Footer() {
 	return (
 		<>
-			<section className="h-[60vh] lg:h-[70vh] px-10 lg:px-36 bg-gradient-to-b from-green-light to-green-dark">
-				<div className="relative w-full h-full rounded-3xl lg:rounded-[85px] bg-contactUs bg-cover bg-no-repeat">
-					<div className="absolute w-full h-full rounded-3xl lg:rounded-[85px] bg-c-yellow/70"></div>
-					<div className="absolute z-10 py-10 lg:py-4 w-full h-full flex flex-col">
-						<h1 className="text-center outlineText text-white font-chromate">
-							Contact Us
-						</h1>
-						<div className="flex-grow grid grid-cols-1 lg:grid-cols-2 lg:gap-10 font-bold text-shadow">
-							<div className="flex flex-col items-center justify-center gap-1 lg:gap-4">
-								<h3 className="text-green-dark">Sponsorship</h3>
-								<h3 className="p-2 rounded-lg text-white bg-green-dark">
-									089943568795
-								</h3>
-								<h4 className="text-green-light">Ines</h4>
-							</div>
-							<div className="flex flex-col items-center justify-center gap-1 lg:gap-4">
-								<h3 className="text-green-dark">Media Partnership</h3>
-								<h3 className="p-2 rounded-lg text-white bg-green-dark">
-									089943568795
-								</h3>
-								<h4 className="text-green-light">Anggi</h4>
-							</div>
+			<section className="px-10 lg:px-36 bg-gradient-to-b from-green-light to-green-dark">
+				<div className=" w-full h-full py-10 rounded-3xl lg:rounded-[85px] bg-c-yellow bg-cover bg-no-repeat">
+					<h1 className="text-center outlineTextMini text-white font-chromate leading-1">
+						Contact Us
+					</h1>
+					<div className="lg:px-20 pt-10 pb-4 flex-grow grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 text-center font-bold">
+						<div className="flex flex-col items-center justify-center gap-1 lg:gap-5">
+							<h3 className="text-green-dark text-shadow-light">Sponsorship</h3>
+							<h3 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">
+								+62-877-3929-1110
+							</h3>
+							<h4 className="text-green-light">Divanti Ayu Wulandari</h4>
+						</div>
+						<div className="flex flex-col items-center justify-center gap-1 lg:gap-5">
+							<h3 className="text-green-dark text-shadow-light">
+								Media Partnership
+							</h3>
+							<h3 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">
+								+62-8953-6611-1531
+							</h3>
+							<h4 className="text-green-light">Inas Farrosi Hanandiya</h4>
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<section className="relative h-[100vh] bg-pastPartner bg-cover bg-no-repeat">
-				<div className="absolute h-full w-full bg-gradient-to-b from-green-dark via-green-dark/80 to-green-dark/70"></div>
+				<div className="absolute h-full w-full bg-gradient-to-b from-green-dark via-green-dark/80 to-green-dark/80"></div>
 				<div className="absolute z-10 h-full w-full px-4 lg:px-36 pt-36">
 					<h1 className="text-center outlineText text-c-yellow font-chromate">
 						Our Past Partner
