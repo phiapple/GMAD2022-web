@@ -28,16 +28,16 @@ module.exports = {
 				}
 			},
 			fontSize: {
-				h1: ['36px', 'auto'],
-				h2: ['32px', 'auto'],
-				h3: ['24px', 'auto'],
-				h4: ['20px', 'auto'],
-				p1: ['16px', '44px'],
-				'mobile-h1': ['30px', 'auto'],
-				'mobile-h2': ['28px', 'auto'],
-				'mobile-h3': ['24px', 'auto'],
-				'mobile-h4': ['20px', 'auto'],
-				'mobile-p1': ['16px', 'auto']
+				h1: ['61.04px', '68px'],
+				h2: ['48.84px', '53px'],
+				h3: ['39.06px', '42px'],
+				h4: ['31.25px', '35px'],
+				p1: ['20px', '30px'],
+				'mobile-h1': ['32px', '35px'],
+				'mobile-h2': ['28px', '31px'],
+				'mobile-h3': ['24px', '26px'],
+				'mobile-h4': ['20px', '22px'],
+				'mobile-p1': ['16px', '24px']
 			},
 			backgroundImage: {
 				register: `url('/images/bg/bg-register.png')`,
