@@ -6,10 +6,10 @@ export default function Footer() {
 		<>
 			<section className="px-10 lg:px-36 bg-gradient-to-b from-green-light to-green-dark">
 				<div className=" w-full h-full py-10 rounded-3xl lg:rounded-[85px] bg-c-yellow bg-cover bg-no-repeat">
-					<h1 className="text-center outlineTextMini text-white font-chromate leading-1">
+					<h1 className="text-center outlineTextMiniDark text-white font-chromate leading-1">
 						Contact Us
 					</h1>
-					<div className="lg:px-20 pt-10 pb-4 flex-grow grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 text-center font-bold">
+					<div className="lg:px-10 pt-10 pb-4 flex-grow grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 text-center font-bold">
 						<div className="flex flex-col items-center justify-center gap-1 lg:gap-5">
 							<h3 className="text-green-dark text-shadow-light">Sponsorship</h3>
 							<h3 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">

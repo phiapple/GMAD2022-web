@@ -28,11 +28,11 @@ module.exports = {
 				}
 			},
 			fontSize: {
-				h1: ['91px', 'auto'],
-				h2: ['70px', 'auto'],
-				h3: ['55px', 'auto'],
-				h4: ['40px', 'auto'],
-				p1: ['34px', '44px'],
+				h1: ['36px', 'auto'],
+				h2: ['32px', 'auto'],
+				h3: ['24px', 'auto'],
+				h4: ['20px', 'auto'],
+				p1: ['16px', '44px'],
 				'mobile-h1': ['30px', 'auto'],
 				'mobile-h2': ['28px', 'auto'],
 				'mobile-h3': ['24px', 'auto'],
@@ -41,6 +41,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				register: `url('/images/bg/bg-register.png')`,
+				'register-mobile': `url('/images/bg/bg-register-mobile.png')`,
 				nao1: `url('/images/bg/bg-nao-1.png')`,
 				nao2: `url('/images/bg/bg-nao-2.png')`,
 				contactUs: `url('/images/bg/bg-ContactUsBox.jpg')`,

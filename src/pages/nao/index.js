@@ -91,8 +91,8 @@ function Nao() {
 			<div className="relative h-screen w-full flex items-center justify-center bg-nao1 ">
 				<div className="absolute w-full h-full bg-green-dark/90"></div>
 				<div className="absolute w-full h-full z-10 flex items-center justify-center">
-					<div className="text-center w-[60vw]">
-						<h1 className="font-chromate text-c-yellow outlineText">
+					<div className="text-center w-[75vw] lg:w-[60vw]">
+						<h1 className="py-4 font-chromate text-c-yellow outlineTextMiniLight">
 							National Accounting Olympiad (NAO)
 						</h1>
 						<div className="text-white font-medium">
@@ -104,8 +104,8 @@ function Nao() {
 					</div>
 				</div>
 			</div>
-			<div className="h-screen w-full pl-20 py-36 gap-10 flex items-center justify-center bg-green-light max-w-full overflow-hidden">
-				<div className="flex-[1] flex flex-col gap-10">
+			<div className="h-[120vh] lg:h-screen w-full lg:pl-20 py-36 gap-10 flex flex-col lg:flex-row items-center justify-center bg-green-light max-w-full overflow-hidden">
+				<div className="flex-[1] px-10 lg:px-0 flex flex-col items-center lg:items-start gap-10 text-center lg:text-start">
 					<h2 className="text-green-dark font-bold">2022</h2>
 					<h1 className="font-chromate text-c-yellow">
 						Timeline & Information
@@ -121,7 +121,7 @@ function Nao() {
 						/>
 					</div>
 				</div>
-				<div className="flex-[3] w-full h-full">
+				<div className="flex-[3] w-full h-screen lg:h-full px-5 lg:px-0">
 					<style>
 						{`
 							.swiper-slide{
@@ -134,19 +134,31 @@ function Nao() {
 					</style>
 					<Swiper
 						loop
-						slidesPerView={3}
+						slidesPerView="auto"
 						spaceBetween={10}
 						pagination={{
 							clickable: true
 						}}
 						modules={[Pagination]}
-						className="w-[60vw] h-[75vh]"
+						className="w-full lg:w-[60vw] h-[55vh] lg:h-[75vh]"
 						onSwiper={swiper => setSwiper(swiper)}
+						breakpoints={{
+							// when window width is >= 320px
+							320: {
+								slidesPerView: 2,
+								spaceBetween: 20
+							},
+							// when window width is >= 640px
+							640: {
+								slidesPerView: 3,
+								spaceBetween: 10
+							}
+						}}
 					>
 						{timelines.map((val, index) => {
 							return (
 								<SwiperSlide className="h-full" key={index}>
-									<div className="h-[65vh] w-[17.5vw] p-4 flex flex-col gap-4 rounded-2xl break-words profile-card outline-gradient">
+									<div className="h-[45vh] lg:h-[65vh] w-[40vw] lg:w-[17.5vw] p-4 flex flex-col gap-4 rounded-2xl break-words profile-card outline-gradient">
 										<h1 className="font-bold leading-1 text-c-yellow text-shadow">
 											{val.date}
 										</h1>
@@ -167,29 +179,52 @@ function Nao() {
 					</Swiper>
 				</div>
 			</div>
-			<div className="relative h-[180vh] w-full bg-nao2 bg-cover bg-no-repeat">
+			<div className="relative h-[250vh] lg:h-[200vh] w-full bg-nao2 bg-cover bg-no-repeat">
 				<div className="absolute w-full h-full bg-gradient-to-b from-green-dark/90 to-green-light/90"></div>
-				<div className="absolute z-10 w-full h-full p-36 flex flex-col gap-60 items-center justify-center ">
-					<div className="flex flex-col items-center justify-center gap-10">
-						<h1 className="font-chromate text-c-yellow outlineText">
-							Booklet & Guideline
-						</h1>
-						<div className="text-white w-[40vw]">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-							consequat vel ligula ac maximus. Aliquam quis erat quam. Mauris
-							vel hendrerit elit.
+				<div className="absolute z-10 w-full h-full py-20 p-10 lg:p-36 flex flex-col gap-4 lg:gap-60 items-center justify-center ">
+					<div className="flex flex-col lg:flex-row items-center justify-center w-full h-[120vh] lg:h-screen gap-20 lg:gap-10 px-4 lg:px-20">
+						<div className="flex-1 text-white leading-7">
+							<h4 className="font-bold py-4">Terms and Conditions</h4>
+							Participants who are currently pursuing an accounting
+							undergraduate degree outside of Universitas Gadjah Mada.
+							<ol className="pl-5 list-decimal list-outside">
+								<li>
+									Participants have to form a team consisting of three (3)
+									members.
+								</li>
+								<li>One person is only allowed to participate in one team.</li>
+								<li>
+									Participants must participate in all NAO’s series of events.
+								</li>
+							</ol>
 						</div>
-						<button className="w-fit px-4 py-2 bg-transparent border-2 border-c-yellow rounded-full text-c-yellow font-medium hover:!bg-c-yellow hover:text-green-dark cursor-pointer">
-							Learn more
-						</button>
+						<div className="flex-1 flex flex-col items-center justify-center gap-10">
+							<h1 className="font-chromate text-center text-c-yellow outlineText">
+								Booklet & Guideline
+							</h1>
+							<div className="text-white text-center">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Praesent consequat vel ligula ac maximus. Aliquam quis erat
+								quam. Mauris vel hendrerit elit.
+							</div>
+							<button className="w-fit px-4 py-2 bg-transparent border-2 border-c-yellow rounded-full text-c-yellow font-medium hover:!bg-c-yellow hover:text-green-dark cursor-pointer">
+								Learn more
+							</button>
+						</div>
 					</div>
 
-					<div className="relative flex flex-col items-center justify-center gap-10 w-full">
-						<div className="absolute w-full h-full bg-register bg-no-repeat bg-contain"></div>
-						<div className="p-4 h-[35vw] w-[35vw] flex items-center justify-center glassmo rounded-full text-c-yellow outline-gradient">
-							<h1 className="font-chromate text-center outlineText">
-								Register Now!
-							</h1>
+					<div className="relative flex flex-col items-center justify-center gap-10 w-screen h-[130vh] lg:h-screen">
+						<div className="absolute top-1/2 md:top-0 -translate-y-1/4 md:translate-y-0 w-full h-screen lg:h-full bg-register-mobile sm:bg-register bg-no-repeat bg-contain"></div>
+						<div className="p-4 h-[60vmin] lg:h-[50vmin] w-[60vmin] lg:w-[50vmin] flex items-center justify-center glassmo rounded-full text-c-yellow outline-gradient cursor-pointer hover:bg-white/20 transition-all hover:scale-110">
+							<a
+								href="https://docs.google.com/forms/d/e/1FAIpQLSfqNe4Xj2pRO0gA_yngVBUeCzLg9Ntk9H2KGJFFcxWhUZ0vyA/viewform?usp=sf_link*"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<h1 className="font-chromate text-center outlineText">
+									Register Now!
+								</h1>
+							</a>
 						</div>
 					</div>
 				</div>
