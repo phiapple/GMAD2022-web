@@ -1,47 +1,115 @@
+import classNames from 'classnames';
 import Image from 'next/image';
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { MedPart, Sponsor } from './source';
 
 export default function Footer() {
 	return (
 		<>
-			<section className="h-[60vh] lg:h-[70vh] px-10 lg:px-36 bg-gradient-to-b from-green-light to-green-dark">
-				<div className="relative w-full h-full rounded-3xl lg:rounded-[85px] bg-contactUs bg-cover bg-no-repeat">
-					<div className="absolute w-full h-full rounded-3xl lg:rounded-[85px] bg-c-yellow/70"></div>
-					<div className="absolute z-10 py-10 lg:py-4 w-full h-full flex flex-col">
-						<h1 className="text-center outlineText text-white font-chromate">
-							Contact Us
-						</h1>
-						<div className="flex-grow grid grid-cols-1 lg:grid-cols-2 lg:gap-10 font-bold text-shadow">
-							<div className="flex flex-col items-center justify-center gap-1 lg:gap-4">
-								<h3 className="text-green-dark">Sponsorship</h3>
-								<h3 className="p-2 rounded-lg text-white bg-green-dark">
-									089943568795
-								</h3>
-								<h4 className="text-green-light">Ines</h4>
-							</div>
-							<div className="flex flex-col items-center justify-center gap-1 lg:gap-4">
-								<h3 className="text-green-dark">Media Partnership</h3>
-								<h3 className="p-2 rounded-lg text-white bg-green-dark">
-									089943568795
-								</h3>
-								<h4 className="text-green-light">Anggi</h4>
-							</div>
+			<section className="px-10 lg:px-36 bg-gradient-to-b from-green-light to-green-dark">
+				<div
+					className=" w-full h-full py-10 rounded-3xl lg:rounded-[85px] bg-c-yellow bg-cover bg-no-repeat"
+					data-aos="fade-down"
+				>
+					<h3 className="text-center outlineTextMiniDark text-white font-chromate leading-1">
+						Contact Us
+					</h3>
+					<div className="lg:px-10 pt-10 pb-4 flex-grow grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 text-center font-bold">
+						<div className="flex flex-col items-center justify-center gap-1 lg:gap-5">
+							<h4 className="text-green-dark text-shadow-light">Sponsorship</h4>
+							<h4 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">
+								+62-877-3929-1110
+							</h4>
+							<h4 className="text-green-light">Divanti Ayu Wulandari</h4>
+						</div>
+						<div className="flex flex-col items-center justify-center gap-1 lg:gap-5">
+							<h4 className="text-green-dark text-shadow-light">
+								Media Partnership
+							</h4>
+							<h4 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">
+								+62-8953-6611-1531
+							</h4>
+							<h4 className="text-green-light">Inas Farrosi Hanandiya</h4>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section className="relative h-[100vh] bg-pastPartner bg-cover bg-no-repeat">
-				<div className="absolute h-full w-full bg-gradient-to-b from-green-dark via-green-dark/80 to-green-dark/70"></div>
+
+			<section className="relative h-[200vh] lg:h-[130vh] bg-pastPartner bg-cover bg-no-repeat">
+				<div className="absolute h-full w-full bg-gradient-to-b from-green-dark via-green-dark/80 to-green-dark/80"></div>
 				<div className="absolute z-10 h-full w-full px-4 lg:px-36 pt-36">
-					<h1 className="text-center outlineText text-c-yellow font-chromate">
+					<h1
+						className="text-center outlineText text-c-yellow font-chromate"
+						data-aos="fade-up"
+					>
 						Our Past Partner
 					</h1>
-					<div className="h-full flex flex-col lg:flex-row gap-10 lg:gap-2 items-center justify-center text-white">
-						<div className="flex-1 flex flex-col items-center justify-center">
-							<h3>Sponsor:</h3>
+					<div className="h-full px-4 pb-20 flex flex-col lg:flex-row gap-10 lg:gap-12 items-center justify-center text-white">
+						<div
+							className="flex-1 flex flex-col items-center justify-center gap-4"
+							data-aos="fade-right"
+							data-aos-delay="500"
+						>
+							<h3 className="font-bold">Sponsor:</h3>
+							<div className="grid justify-items-center grid-cols-12 gap-x-4 lg:gap-x-4 gap-y-2">
+								{Sponsor.map((val, index) => {
+									return (
+										<div
+											className={classNames(
+												'relative h-20 w-20 col-span-4',
+												0 <= index && index <= 3 && 'lg:col-span-3',
+												4 <= index && index <= 6 && 'lg:col-span-4',
+												7 <= index && index <= 10 && 'lg:col-span-3',
+												11 <= index && index <= 13 && 'lg:col-span-4',
+												14 <= index && index <= 17 && 'lg:col-span-3'
+											)}
+											key={index}
+										>
+											<Image
+												src={`/images/pastSponsor/${val}`}
+												alt="Past Media Parnter"
+												width="100%"
+												height="100%"
+												layout="responsive"
+												objectFit="contain"
+											/>
+										</div>
+									);
+								})}
+							</div>
 						</div>
-						<div className="flex-1 flex flex-col items-center justify-center">
-							<h3>Media Partner:</h3>
+						<div
+							className="flex-1 flex flex-col items-center justify-center gap-4"
+							data-aos="fade-left"
+							data-aos-delay="1000"
+						>
+							<h3 className="font-bold">Media Partner:</h3>
+							<div className="grid justify-items-center grid-cols-12 gap-x-4 gap-y-2">
+								{MedPart.map((val, index) => {
+									return (
+										<div
+											className={classNames(
+												'relative h-20 w-20 col-span-4',
+												0 <= index && index <= 3 && 'lg:col-span-3',
+												4 <= index && index <= 6 && 'lg:col-span-4',
+												7 <= index && index <= 10 && 'lg:col-span-3',
+												11 <= index && index <= 13 && 'lg:col-span-4',
+												14 <= index && index <= 17 && 'lg:col-span-3'
+											)}
+											key={index}
+										>
+											<Image
+												src={`/images/pastMediaPartner/${val}`}
+												alt="Past Media Parnter"
+												width="100%"
+												height="100%"
+												layout="responsive"
+												objectFit="contain"
+											/>
+										</div>
+									);
+								})}
+							</div>
 						</div>
 					</div>
 				</div>

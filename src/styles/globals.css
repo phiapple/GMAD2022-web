@@ -210,6 +210,108 @@
 		-4.3px 9px 0.02px #0e473e, 7.9px 6.1px 0.02px #0e473e;
 }
 
+.outlineTextMiniLight {
+	text-shadow: 0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067, 0px 0px 5px #157067, 0px 0px 5px #157067,
+		0px 0px 5px #157067;
+}
+
+.outlineTextMiniDark {
+	text-shadow: 0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e, 0px 0px 3px #0e473e, 0px 0px 3px #0e473e,
+		0px 0px 3px #0e473e;
+}
+
 .atalks-bg-1 {
 	/* background-image: url() */
 	background: linear-gradient(
@@ -281,10 +383,15 @@
 		rgba(15, 71, 62, 0.97) 100%
 	);
 }
-.pastPartner-bgImg {
-	background: url('../../public/images/bg/bg-PastPartner.png') no-repeat center;
-}
 
 .text-shadow {
 	text-shadow: 0px 2.24076px 6.72229px rgba(0, 0, 0, 0.4);
+}
+
+.text-shadow-b {
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-shadow-light {
+	text-shadow: 0px 2.24076px 6.72229px rgba(255, 255, 255, 0.9);
 }
