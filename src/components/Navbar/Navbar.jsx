@@ -84,7 +84,7 @@ function Navbar() {
 															<button
 																// href="/Atalks"
 																type="button"
-																onClick={() => router.push('/atalks')}
+																onClick={() => router.push('/atalk')}
 																className={classNames(
 																	active
 																		? 'bg-green-light text-c-yellow'
@@ -231,7 +231,7 @@ function Navbar() {
 														<button
 															// href="/Atalks"
 															type="button"
-															onClick={() => router.push('/atalks')}
+															onClick={() => router.push('/atalk')}
 															className={classNames(
 																active
 																	? 'bg-c-yellow text-green-dark'
