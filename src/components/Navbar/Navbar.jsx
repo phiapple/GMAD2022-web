@@ -6,6 +6,7 @@ import { Menu, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -16,18 +17,22 @@ function Navbar() {
 	return (
 		<div className="sticky top-0 bg-green-light z-[9999]">
 			{/* container */}
-			<nav className="shadow-sm w-full z-10 p-0 mx-auto">
-				<div className="w-full p-0 mx-auto bg-green-dark">
-					<div className="flex item-center h-center w-full">
-						<div className="flex items items-center mx-20 justify-between w-full">
-							<div className="flex justify-center items-center flex-shrink-0">
-								<Image
-									src="/images/logo/GMADoren.png"
-									alt="GMAD2022"
-									width={196}
-									height={70}
-								/>
-							</div>
+			<nav className="shadow-sm w-full z-10 mx-auto">
+				<div className="w-full mx-auto bg-green-dark">
+					<div className="flex container max-w-full mx-auto item-center h-center w-full">
+						<div className="flex items items-center justify-between w-full">
+							<Link href="/" passHref>
+								<div className="flex justify-center items-center py-2 cursor-pointer">
+									<Image
+										src="/images/logo/GMADoren.png"
+										alt="GMAD2022"
+										width={196}
+										height={50}
+										objectFit="contain"
+										objectPosition="left"
+									/>
+								</div>
+							</Link>
 							<div className="hidden md:block">
 								<div className=" ml-10 flex items-baseline space-x-4 origin-top-right">
 									<button
@@ -82,7 +87,7 @@ function Navbar() {
 															<button
 																// href="/Atalks"
 																type="button"
-																onClick={() => router.push('/atalks')}
+																onClick={() => router.push('/atalk')}
 																className={classNames(
 																	active
 																		? 'bg-green-light text-c-yellow'
@@ -117,7 +122,7 @@ function Navbar() {
 								</div>
 							</div>
 						</div>
-						<div className="mr-10 flex md:hidden">
+						<div className="flex md:hidden">
 							<button
 								onClick={() => setIsOpen(!isOpen)}
 								type="button"
@@ -229,7 +234,7 @@ function Navbar() {
 														<button
 															// href="/Atalks"
 															type="button"
-															onClick={() => router.push('/atalks')}
+															onClick={() => router.push('/atalk')}
 															className={classNames(
 																active
 																	? 'bg-c-yellow text-green-dark'
@@ -254,7 +259,7 @@ function Navbar() {
 								</button>
 								<button
 									type="button"
-									onClick={() => router.push('/contactUs')}
+									onClick={() => router.push('/contact')}
 									// href="../../pages/_contactUs.js"
 									className="cursor-pointer hover:bg-green-dark hover:text-white text-green-dark block px-3 py-2 rounded-md text-base font-medium w-full text-left"
 								>

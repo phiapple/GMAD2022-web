@@ -1,35 +1,40 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { MedPart, Sponsor } from './source';
+import { MedPart, Sponsor, Sosmed } from './source';
 
 export default function Footer() {
 	return (
 		<>
 			<section className="px-10 lg:px-36 bg-gradient-to-b from-green-light to-green-dark">
+				<div className="h-[70px]"></div>
 				<div
-					className=" w-full h-full py-10 rounded-3xl lg:rounded-[85px] bg-c-yellow bg-cover bg-no-repeat"
+					className="copntainer max-w-3xl mx-auto w-full h-full py-10 rounded-3xl bg-c-yellow bg-cover bg-no-repeat"
 					data-aos="fade-down"
 				>
 					<h3 className="text-center outlineTextMiniDark text-white font-chromate leading-1">
 						Contact Us
 					</h3>
-					<div className="lg:px-10 pt-10 pb-4 flex-grow grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 text-center font-bold">
-						<div className="flex flex-col items-center justify-center gap-1 lg:gap-5">
-							<h4 className="text-green-dark text-shadow-light">Sponsorship</h4>
-							<h4 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">
-								+62-877-3929-1110
-							</h4>
-							<h4 className="text-green-light">Divanti Ayu Wulandari</h4>
+					<div className="lg:px-10 pt-4 flex-grow grid grid-cols-1 lg:grid-cols-2 gap-4 text-center font-bold">
+						<div className="flex flex-col items-center justify-center gap-1 lg:gap-3">
+							<p className="text-green-dark text-shadow-light">Sponsorship</p>
+							<a href="https://wa.me/6287739291110">
+								<p className="pt-2 pb-1 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark border-2 border-green-dark hover:bg-transparent hover:text-green-dark transition-all duration-200">
+									+62-877-3929-1110
+								</p>
+							</a>
+							<p className="text-green-light">Divanti Ayu Wulandari</p>
 						</div>
-						<div className="flex flex-col items-center justify-center gap-1 lg:gap-5">
-							<h4 className="text-green-dark text-shadow-light">
+						<div className="flex flex-col items-center justify-center gap-1 lg:gap-3">
+							<p className="text-green-dark text-shadow-light">
 								Media Partnership
-							</h4>
-							<h4 className="p-2 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark">
-								+62-8953-6611-1531
-							</h4>
-							<h4 className="text-green-light">Inas Farrosi Hanandiya</h4>
+							</p>
+							<a href="https://wa.me/62895366111531">
+								<p className="pt-2 pb-1 px-4 lg:px-10 shadow-2xl rounded-full text-white bg-green-dark border-2 border-green-dark hover:bg-transparent hover:text-green-dark transition-all duration-200">
+									+62-8953-6611-1531
+								</p>
+							</a>
+							<p className="text-green-light">Inas Farrosi Hanandiya</p>
 						</div>
 					</div>
 				</div>
@@ -39,7 +44,7 @@ export default function Footer() {
 				<div className="absolute h-full w-full bg-gradient-to-b from-green-dark via-green-dark/80 to-green-dark/80"></div>
 				<div className="absolute z-10 h-full w-full px-4 lg:px-36 pt-36">
 					<h1
-						className="text-center outlineText text-c-yellow font-chromate"
+						className="text-center outlineText text-c-yellow font-chromate mb-8 lg:-mb-4"
 						data-aos="fade-up"
 					>
 						Our Past Partner
@@ -124,19 +129,18 @@ export default function Footer() {
 						alt="logo gmad"
 					/>
 				</div>
-				<div className="grid grid-cols-4 gap-2 lg:gap-4 text-white">
-					<a href="https://instagram.com/" target="_blank" rel="noreferrer">
-						<FaInstagram className="h-10 w-10 lg:h-12 lg:w-12 p-2 lg:p-3 rounded-full bg-c-blue-logo  cursor-pointer hover:scale-105" />
-					</a>
-					<a href="https://facebook.com/" target="_blank" rel="noreferrer">
-						<FaFacebook className="h-10 w-10 lg:h-12 lg:w-12 p-2 lg:p-3 rounded-full bg-c-blue-logo  cursor-pointer hover:scale-105" />
-					</a>
-					<a href="https://twitter.com/" target="_blank" rel="noreferrer">
-						<FaTwitter className="h-10 w-10 lg:h-12 lg:w-12 p-2 lg:p-3 rounded-full bg-c-blue-logo  cursor-pointer hover:scale-105" />
-					</a>
-					<a href="https://linkedin.com/" target="_blank" rel="noreferrer">
-						<FaLinkedin className="h-10 w-10 lg:h-12 lg:w-12 p-2 lg:p-3 rounded-full bg-c-blue-logo  cursor-pointer hover:scale-105" />
-					</a>
+				<div className="z-50 grid grid-cols-4 gap-2 lg:gap-4 text-white">
+					{Sosmed.map(sosmed => (
+						<a
+							key={sosmed.name}
+							href={sosmed.redirectUrl}
+							target="_blank"
+							rel="noreferrer"
+							role="button"
+						>
+							<sosmed.imageFa className="block h-10 w-10 lg:h-12 lg:w-12 p-2 lg:p-3 rounded-full bg-c-blue-logo  cursor-pointer hover:scale-105" />
+						</a>
+					))}
 				</div>
 			</footer>
 		</>

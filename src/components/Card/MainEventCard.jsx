@@ -14,22 +14,34 @@ export default function MainEventCard({
 }) {
 	const router = useRouter();
 	return (
-		<div className="p-6 border-2 stroke-gradient-1 rounded-[40px] text-white flex flex-col space-y-2 glassmo">
-			<div className="">
+		<div
+			className={`p-6 border-2 stroke-gradient-1 rounded-[40px] text-white flex flex-col space-y-2 glassmo ${
+				!noButton && 'hover:-translate-y-1 transition-all duration-200'
+			}`}
+			role={!noButton && 'button'}
+			onClick={
+				!noButton
+					? function () {
+							router.push(buttonPushTo);
+					  }
+					: function () {}
+			}
+		>
+			<div className="w-[220px] mx-auto relative">
 				<Image
 					src={imageUrl}
 					alt={imageAlt}
 					width={640}
 					height={360}
-					objectFit="cover"
+					objectFit="contain"
 					objectPosition="center"
-					className="rounded-[32px]"
+					// className="h-full"
 				/>
 			</div>
-			<h3 className="font-bold drop-shadow-lg">{title}</h3>
-			<h4 className="font-bold drop-shadow-lg">{subtitle}</h4>
-			<p className="">{body}</p>
-			{!noButton && (
+			<h3 className="font-bold lg:text-2xl drop-shadow-lg">{title}</h3>
+			<h4 className="font-bold lg:text-xl drop-shadow-lg !-mt-1">{subtitle}</h4>
+			<p className="text-sm lg:text-md">{body}</p>
+			{/* {!noButton && (
 				<>
 					<div className="grow h-2"></div>
 					<div className="flex flex-row justify-end">
@@ -39,7 +51,7 @@ export default function MainEventCard({
 						/>
 					</div>
 				</>
-			)}
+			)} */}
 		</div>
 	);
 }

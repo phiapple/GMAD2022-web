@@ -1,3 +1,5 @@
+import { FaInstagram, FaLine, FaLinkedin, FaYoutube } from 'react-icons/fa';
+
 const MedPart = [
 	'1._Diamond_XL_Adi_TV.png',
 	'10. Bronze_XS_KR Jogja.PNG',
@@ -40,4 +42,27 @@ const Sponsor = [
 	'2021_bni.png'
 ];
 
-export { MedPart, Sponsor };
+const Sosmed = [
+	{
+		name: 'instagram',
+		redirectUrl: 'https://instagram.com/gmad.ugm',
+		imageFa: FaInstagram
+	},
+	{
+		name: 'line',
+		redirectUrl: 'https://line.me/R/ti/p/@aju6891t?from=page',
+		imageFa: FaLine
+	},
+	{
+		name: 'linkedin',
+		redirectUrl: 'https://www.linkedin.com/company/gmad.ugm',
+		imageFa: FaLinkedin
+	},
+	{
+		name: 'linkedin',
+		redirectUrl: 'https://www.youtube.com/channel/UCgsG8adGfw885oRYzu4o5tQ',
+		imageFa: FaYoutube
+	}
+];
+
+export { MedPart, Sponsor, Sosmed };

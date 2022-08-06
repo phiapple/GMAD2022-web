@@ -14,73 +14,73 @@ import Image from 'next/image';
 
 const timelines = [
 	{
-		date: '05 - 31',
+		date: '07 - 31',
 		month: 'August',
 		eventName: 'Early Bird Registration',
-		imgSrc: null,
+		imgSrc: '/images/timeline/1.jpg',
 		link: ''
 	},
 	{
 		date: '01 - 16',
 		month: 'September',
 		eventName: 'Regular Registration',
-		imgSrc: null,
+		imgSrc: '/images/timeline/2.jpg',
 		link: ''
 	},
 	{
 		date: '01',
 		month: 'October',
 		eventName: 'Online Preliminary',
-		imgSrc: null,
+		imgSrc: '/images/timeline/3.jpg',
 		link: ''
 	},
 	{
 		date: '03',
 		month: 'October',
 		eventName: 'Top 25 Announcement',
-		imgSrc: null,
+		imgSrc: '/images/timeline/4.jpg',
 		link: ''
 	},
 	{
 		date: '04 - 13',
 		month: 'October',
 		eventName: 'Main Event Registration',
-		imgSrc: null,
+		imgSrc: '/images/timeline/5.jpg',
 		link: ''
 	},
 	{
 		date: '14',
 		month: 'October',
 		eventName: 'Technical Meeting Quarter dan Semifinal',
-		imgSrc: null,
+		imgSrc: '/images/timeline/6.jpg',
 		link: ''
 	},
 	{
 		date: '15 - 16',
 		month: 'October',
 		eventName: 'Main Event : Quarter dan Semifinal	',
-		imgSrc: null,
+		imgSrc: '/images/timeline/7.jpg',
 		link: ''
 	},
 	{
 		date: '21',
 		month: 'October',
 		eventName: 'Technical Meeting Final',
-		imgSrc: null,
+		imgSrc: '/images/timeline/8.jpg',
 		link: ''
 	},
 	{
 		date: '22',
 		month: 'October',
 		eventName: 'Main Event : Final',
-		imgSrc: null,
+		imgSrc: '/images/timeline/9.jpg',
 		link: ''
 	},
 	{
 		date: '23',
 		month: 'October',
 		eventName: 'Awarding Day',
-		imgSrc: null,
+		imgSrc: '/images/timeline/10.jpg',
 		link: ''
 	}
 ];
@@ -95,18 +95,35 @@ function Nao() {
 	};
 
 	return (
-		<DefaultLayout title="GMAD 2022">
+		<DefaultLayout title="NAO - GMAD 2022">
 			<div className="relative h-screen w-full flex items-center justify-center bg-nao1 ">
 				<div className="absolute w-full h-full bg-green-dark/90"></div>
 				<div className="absolute w-full h-full z-10 flex items-center justify-center">
 					<div className="text-center w-[75vw] lg:w-[60vw]">
-						<h1
-							className="py-4 font-chromate text-c-yellow outlineTextMiniLight"
+						<div
+							className="relative w-full h-[200px] max-w-[500px] lg:h-[320px] mx-auto -mt-20"
 							data-aos="fade-up"
+						>
+							<Image
+								src="/images/homepage/event-nao.png"
+								alt="NAO"
+								layout="fill"
+								objectFit="contain"
+								objectPosition="center"
+							/>
+						</div>
+						<h1
+							className="py-4 font-chromate text-c-yellow outlineText -mt-8"
+							data-aos="fade-up"
+							data-aos-delay="1000"
 						>
 							National Accounting Olympiad (NAO)
 						</h1>
-						<div className="text-white font-medium" data-aos="fade-up">
+						<div
+							className="text-white font-medium"
+							data-aos="fade-up"
+							data-aos-delay="1500"
+						>
 							National Accounting Olympiad (NAO) is one of the largest and most
 							prestigious Accounting Olympiads in Indonesia. As part of the
 							Gadjah Mada Accounting Days (GMAD) 2022, NAO is here to prove that
@@ -177,7 +194,7 @@ function Nao() {
 						{timelines.map((val, index) => {
 							return (
 								<SwiperSlide className="h-full" key={index}>
-									<div className="h-[45vh] lg:h-[55vh] w-[40vw] lg:w-[17.5vw] p-4 flex flex-col gap-4 rounded-2xl break-words profile-card outline-gradient">
+									<div className="h-[45vh] lg:h-[55vh] w-[40vw] lg:w-[17.5vw] p-4 pt-8 flex flex-col gap-4 rounded-2xl break-words profile-card outline-gradient">
 										<h2 className="font-bold leading-1 text-c-yellow text-shadow">
 											{val.date}
 										</h2>
@@ -187,10 +204,10 @@ function Nao() {
 										<p className="flex-grow font-bold text-white text-shadow">
 											{val.eventName}
 										</p>
-										<div className="relative h-[35%] w-full rounded-lg">
+										<div className="relative h-[40%] w-full rounded-lg">
 											<Image
 												className="rounded-lg"
-												src={val.src ?? '/images/bg/placeholder.png'}
+												src={val.imgSrc ?? '/images/bg/placeholder.png'}
 												alt="image preview"
 												layout="fill"
 												objectFit="cover"
@@ -207,24 +224,24 @@ function Nao() {
 				</div>
 			</div>
 			<div className="relative h-[200vh] w-full bg-nao2 bg-cover bg-no-repeat">
-				<div className="absolute z-20 -translate-y-1/2 w-full h-[25vh] lg:h-[20vh] flex justify-center">
+				<div className="absolute z-20 -translate-y-1/2 w-full flex justify-center">
 					<div
 						className="w-3/4 h-full px-6 py-2 lg:py-6 bg-c-yellow rounded-2xl flex flex-col lg:flex-row"
 						data-aos="fade-up"
 					>
-						<div className="flex-1 py-4 lg:py-0 px-10 flex flex-col items-center justify-center text-center border-b lg:border-b-0 lg:border-r border-black">
+						<div className="flex-1 py-4 lg:py-0 px-10 flex flex-col items-center justify-center text-center border-b lg:border-b-0 lg:border-r border-green-dark">
 							<h4 className="font-bold text-shadow-b">Total Prize</h4>
 							<h3 className="font-bold text-green-light text-shadow-b">
 								IDR 17.000.000
 							</h3>
 						</div>
-						<div className="flex-1 py-4 lg:py-0 px-10 flex flex-col items-center justify-center text-center border-t lg:border-t-0 lg:border-l border-black">
+						<div className="flex-1 py-4 lg:py-0 px-10 flex flex-col items-center justify-center text-center border-t lg:border-t-0 lg:border-l border-green-dark">
 							<p className="font-medium">Registration fee</p>
 							<p className="font-medium text-green-dark">
-								Early Bird : IDR 45.000
+								Early Bird : IDR 30.000
 							</p>
 							<p className="font-medium text-green-dark">
-								Regular : IDR 75.000
+								Regular : IDR 60.000
 							</p>
 						</div>
 					</div>
@@ -234,9 +251,12 @@ function Nao() {
 					<div className="flex flex-col lg:flex-row items-center justify-center w-full h-screen gap-20 lg:gap-10 px-4 lg:px-20">
 						<div className="flex-1 text-white leading-7" data-aos="fade-right">
 							<h4 className="font-bold py-4">Terms and Conditions</h4>
-							Participants who are currently pursuing an accounting
-							undergraduate degree outside of Universitas Gadjah Mada.
+
 							<ol className="pl-5 list-decimal list-outside">
+								<li>
+									Participants who are currently pursuing an accounting
+									undergraduate degree outside of Universitas Gadjah Mada.
+								</li>
 								<li>
 									Participants have to form a team consisting of three (3)
 									members.
@@ -246,6 +266,46 @@ function Nao() {
 									Participants must participate in all NAO’s series of events.
 								</li>
 							</ol>
+
+							<div className="mt-4">
+								<div className="font-bold text-base">Contact Person</div>
+								<div className="flex">
+									<div className="mt-2 flex-1 border-r border-white">
+										<p className="text-base">Teky Lisdawati</p>
+										<p className="text-sm">
+											LINE: <span className="font-bold">@tekyy_</span>
+										</p>
+										<p className="text-sm">
+											WhatsApp:{' '}
+											<a
+												className="font-bold hover:underline"
+												href="https://wa.me/085212303723"
+												target="_blank"
+												rel="noreferrer"
+											>
+												085212303723
+											</a>
+										</p>
+									</div>
+									<div className="pl-4 pt-2 flex-1 border-white">
+										<p className="text-base">Naila Fatina</p>
+										<p className="text-sm">
+											LINE: <span className="font-bold">nailafatina</span>
+										</p>
+										<p className="text-sm">
+											WhatsApp:{' '}
+											<a
+												className="font-bold hover:underline"
+												href="https://wa.me/081288728811"
+												target="_blank"
+												rel="noreferrer"
+											>
+												081288728811
+											</a>
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div
 							className="flex-1 flex flex-col items-center justify-center gap-10"
@@ -253,7 +313,7 @@ function Nao() {
 							data-aos-delay="500"
 						>
 							<h1 className="font-chromate text-center text-c-yellow outlineText">
-								Booklet & Guideline
+								Booklet
 							</h1>
 							{/* <div className="text-white text-center">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -277,20 +337,17 @@ function Nao() {
 							className="absolute top-1/2 md:top-0 -translate-y-1/4 md:translate-y-0 w-full h-screen lg:h-full bg-register-mobile sm:bg-register bg-no-repeat bg-contain"
 							data-aos="zoom-out"
 						></div>
-						<div
+						<a
 							className="p-4 h-[60vmin] lg:h-[50vmin] w-[60vmin] lg:w-[50vmin] flex items-center justify-center glassmo rounded-full text-c-yellow outline-gradient cursor-pointer hover:bg-white/20 transition-all hover:scale-110"
 							data-aos="zoom-in"
+							href="https://docs.google.com/forms/d/e/1FAIpQLSfqNe4Xj2pRO0gA_yngVBUeCzLg9Ntk9H2KGJFFcxWhUZ0vyA/viewform?usp=sf_link*"
+							target="_blank"
+							rel="noreferrer"
 						>
-							<a
-								href="https://docs.google.com/forms/d/e/1FAIpQLSfqNe4Xj2pRO0gA_yngVBUeCzLg9Ntk9H2KGJFFcxWhUZ0vyA/viewform?usp=sf_link*"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<h1 className="font-chromate text-center outlineText">
-									Register Now!
-								</h1>
-							</a>
-						</div>
+							<h1 className="font-chromate text-center outlineText">
+								Register Now!
+							</h1>
+						</a>
 					</div>
 				</div>
 			</div>
