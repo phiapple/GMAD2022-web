@@ -10,8 +10,10 @@ export default function DefaultLayout({ title = 'GMAD 2022', children }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar />
-			<main>{children}</main>
-			<Footer />
+			<div className="w-screen max-w-full overflow-x-hidden">
+				<main>{children}</main>
+				<Footer />
+			</div>
 		</div>
 	);
 }

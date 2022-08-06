@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 const timelines = [
 	{
-		date: '05 - 31',
+		date: '07 - 31',
 		month: 'August',
 		eventName: 'Early Bird Registration',
 		imgSrc: '/images/timeline/1.jpg',
@@ -100,7 +100,10 @@ function Nao() {
 				<div className="absolute w-full h-full bg-green-dark/90"></div>
 				<div className="absolute w-full h-full z-10 flex items-center justify-center">
 					<div className="text-center w-[75vw] lg:w-[60vw]">
-						<div className="relative w-[500px] h-[320px] mx-auto -mt-20">
+						<div
+							className="relative w-[500px] h-[320px] mx-auto -mt-20"
+							data-aos="fade-up"
+						>
 							<Image
 								src="/images/homepage/event-nao.png"
 								alt="NAO"
@@ -110,12 +113,17 @@ function Nao() {
 							/>
 						</div>
 						<h1
-							className="py-4 font-chromate text-c-yellow outlineText"
+							className="py-4 font-chromate text-c-yellow outlineText -mt-8"
 							data-aos="fade-up"
+							data-aos-delay="500"
 						>
 							National Accounting Olympiad (NAO)
 						</h1>
-						<div className="text-white font-medium" data-aos="fade-up">
+						<div
+							className="text-white font-medium"
+							data-aos="fade-up"
+							data-aos-delay="500"
+						>
 							National Accounting Olympiad (NAO) is one of the largest and most
 							prestigious Accounting Olympiads in Indonesia. As part of the
 							Gadjah Mada Accounting Days (GMAD) 2022, NAO is here to prove that
@@ -230,10 +238,10 @@ function Nao() {
 						<div className="flex-1 py-4 lg:py-0 px-10 flex flex-col items-center justify-center text-center border-t lg:border-t-0 lg:border-l border-black">
 							<p className="font-medium">Registration fee</p>
 							<p className="font-medium text-green-dark">
-								Early Bird : IDR 45.000
+								Early Bird : IDR 30.000
 							</p>
 							<p className="font-medium text-green-dark">
-								Regular : IDR 75.000
+								Regular : IDR 60.000
 							</p>
 						</div>
 					</div>
