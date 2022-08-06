@@ -101,7 +101,7 @@ function Nao() {
 				<div className="absolute w-full h-full z-10 flex items-center justify-center">
 					<div className="text-center w-[75vw] lg:w-[60vw]">
 						<div
-							className="relative w-[500px] h-[320px] mx-auto -mt-20"
+							className="relative w-full h-[200px] max-w-[500px] lg:h-[320px] mx-auto -mt-20"
 							data-aos="fade-up"
 						>
 							<Image
@@ -224,18 +224,18 @@ function Nao() {
 				</div>
 			</div>
 			<div className="relative h-[200vh] w-full bg-nao2 bg-cover bg-no-repeat">
-				<div className="absolute z-20 -translate-y-1/2 w-full h-[25vh] lg:h-[20vh] flex justify-center">
+				<div className="absolute z-20 -translate-y-1/2 w-full flex justify-center">
 					<div
 						className="w-3/4 h-full px-6 py-2 lg:py-6 bg-c-yellow rounded-2xl flex flex-col lg:flex-row"
 						data-aos="fade-up"
 					>
-						<div className="flex-1 py-4 lg:py-0 px-10 flex flex-col items-center justify-center text-center border-b lg:border-b-0 lg:border-r border-black">
+						<div className="flex-1 py-4 lg:py-0 px-10 flex flex-col items-center justify-center text-center border-b lg:border-b-0 lg:border-r border-green-dark">
 							<h4 className="font-bold text-shadow-b">Total Prize</h4>
 							<h3 className="font-bold text-green-light text-shadow-b">
 								IDR 17.000.000
 							</h3>
 						</div>
-						<div className="flex-1 py-4 lg:py-0 px-10 flex flex-col items-center justify-center text-center border-t lg:border-t-0 lg:border-l border-black">
+						<div className="flex-1 py-4 lg:py-0 px-10 flex flex-col items-center justify-center text-center border-t lg:border-t-0 lg:border-l border-green-dark">
 							<p className="font-medium">Registration fee</p>
 							<p className="font-medium text-green-dark">
 								Early Bird : IDR 30.000
@@ -267,7 +267,19 @@ function Nao() {
 								</li>
 							</ol>
 
-							<p>Contact: </p>
+							<div className="mt-4">
+								<div className="font-bold text-base">Contact:</div>
+								<div className="mt-2">
+									<p className="text-base">Teky Lisdawati</p>
+									<p className="text-sm">@tekyy_ (Line) | 085212303723 (WA)</p>
+								</div>
+								<div className="mt-2">
+									<p className="text-base">Naila Fatina</p>
+									<p className="text-sm">
+										nailafatina (Line) | 081288728811 (WA)
+									</p>
+								</div>
+							</div>
 						</div>
 						<div
 							className="flex-1 flex flex-col items-center justify-center gap-10"
