@@ -256,7 +256,7 @@ function Navbar() {
 								</button>
 								<button
 									type="button"
-									onClick={() => router.push('/contactUs')}
+									onClick={() => router.push('/contact')}
 									// href="../../pages/_contactUs.js"
 									className="cursor-pointer hover:bg-green-dark hover:text-white text-green-dark block px-3 py-2 rounded-md text-base font-medium w-full text-left"
 								>
