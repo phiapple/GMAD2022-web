@@ -16,16 +16,18 @@ function Navbar() {
 	return (
 		<div className="sticky top-0 bg-green-light z-[9999]">
 			{/* container */}
-			<nav className="shadow-sm w-full z-10 p-0 mx-auto">
-				<div className="w-full p-0 mx-auto bg-green-dark">
-					<div className="flex item-center h-center w-full">
-						<div className="flex items items-center mx-20 justify-between w-full">
-							<div className="flex justify-center items-center flex-shrink-0">
+			<nav className="shadow-sm w-full z-10 mx-auto">
+				<div className="w-full mx-auto bg-green-dark">
+					<div className="flex container mx-auto item-center h-center w-full">
+						<div className="flex items items-center justify-between w-full">
+							<div className="flex justify-center items-center py-2">
 								<Image
 									src="/images/logo/GMADoren.png"
 									alt="GMAD2022"
 									width={196}
-									height={70}
+									height={50}
+									objectFit="contain"
+									objectPosition="left"
 								/>
 							</div>
 							<div className="hidden md:block">
@@ -117,7 +119,7 @@ function Navbar() {
 								</div>
 							</div>
 						</div>
-						<div className="mr-10 flex md:hidden">
+						<div className="flex md:hidden">
 							<button
 								onClick={() => setIsOpen(!isOpen)}
 								type="button"
