@@ -100,6 +100,15 @@ function Nao() {
 				<div className="absolute w-full h-full bg-green-dark/90"></div>
 				<div className="absolute w-full h-full z-10 flex items-center justify-center">
 					<div className="text-center w-[75vw] lg:w-[60vw]">
+						<div className="relative w-[500px] h-[320px] mx-auto -mt-20">
+							<Image
+								src="/images/homepage/event-nao.png"
+								alt="NAO"
+								layout="fill"
+								objectFit="contain"
+								objectPosition="center"
+							/>
+						</div>
 						<h1
 							className="py-4 font-chromate text-c-yellow outlineText"
 							data-aos="fade-up"
@@ -234,9 +243,12 @@ function Nao() {
 					<div className="flex flex-col lg:flex-row items-center justify-center w-full h-screen gap-20 lg:gap-10 px-4 lg:px-20">
 						<div className="flex-1 text-white leading-7" data-aos="fade-right">
 							<h4 className="font-bold py-4">Terms and Conditions</h4>
-							Participants who are currently pursuing an accounting
-							undergraduate degree outside of Universitas Gadjah Mada.
+
 							<ol className="pl-5 list-decimal list-outside">
+								<li>
+									Participants who are currently pursuing an accounting
+									undergraduate degree outside of Universitas Gadjah Mada.
+								</li>
 								<li>
 									Participants have to form a team consisting of three (3)
 									members.
@@ -246,6 +258,8 @@ function Nao() {
 									Participants must participate in all NAO’s series of events.
 								</li>
 							</ol>
+
+							<p>Contact: </p>
 						</div>
 						<div
 							className="flex-1 flex flex-col items-center justify-center gap-10"
@@ -253,7 +267,7 @@ function Nao() {
 							data-aos-delay="500"
 						>
 							<h1 className="font-chromate text-center text-c-yellow outlineText">
-								Booklet & Guideline
+								Booklet
 							</h1>
 							{/* <div className="text-white text-center">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
