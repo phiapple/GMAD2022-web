@@ -31,7 +31,7 @@ function Atalks() {
 			<Navbar />
 
 			{/* section landing page */}
-			<section className="  h-screen atalks-bgImg-1 bg-cover">
+			{/* <section className="  h-screen atalks-bgImg-1 bg-cover">
 				<div className="  h-full items-center justify-center mx-auto block md:max-w-screen  atalks-bg-1">
 					<div className=" block text-center items-center mx-10 md:mx-80">
 						<div className="pt-60  ">
@@ -49,7 +49,7 @@ function Atalks() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 			{/* end section landing page */}
 
 			{/* section coming soon */}
@@ -85,14 +85,14 @@ function Atalks() {
           <ProfileCard />
           <ProfileCard />
         </div> */}
-			<div className="relative py-20 flex flex-col items-center justify-center gap-10 w-full bg-gradient-to-b from-green-dark to-green-light">
+			{/* <div className="relative py-20 flex flex-col items-center justify-center gap-10 w-full bg-gradient-to-b from-green-dark to-green-light">
 				<div className="absolute w-full h-full bg-register bg-no-repeat bg-contain"></div>
 				<div className="p-4 h-[35vw] w-[35vw] flex items-center justify-center glassmo rounded-full text-c-yellow outline-gradient">
 					<h1 className="font-chromate text-center outlineText">
 						Register Now!
 					</h1>
 				</div>
-			</div>
+			</div> */}
 		</>
 	);
 }
