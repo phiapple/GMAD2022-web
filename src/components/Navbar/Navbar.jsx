@@ -18,7 +18,7 @@ function Navbar() {
 			{/* container */}
 			<nav className="shadow-sm w-full z-10 mx-auto">
 				<div className="w-full mx-auto bg-green-dark">
-					<div className="flex container mx-auto item-center h-center w-full">
+					<div className="flex container max-w-full mx-auto item-center h-center w-full">
 						<div className="flex items items-center justify-between w-full">
 							<div className="flex justify-center items-center py-2">
 								<Image
