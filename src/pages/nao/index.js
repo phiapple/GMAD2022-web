@@ -115,14 +115,14 @@ function Nao() {
 						<h1
 							className="py-4 font-chromate text-c-yellow outlineText -mt-8"
 							data-aos="fade-up"
-							data-aos-delay="500"
+							data-aos-delay="1000"
 						>
 							National Accounting Olympiad (NAO)
 						</h1>
 						<div
 							className="text-white font-medium"
 							data-aos="fade-up"
-							data-aos-delay="500"
+							data-aos-delay="1500"
 						>
 							National Accounting Olympiad (NAO) is one of the largest and most
 							prestigious Accounting Olympiads in Indonesia. As part of the
@@ -268,16 +268,42 @@ function Nao() {
 							</ol>
 
 							<div className="mt-4">
-								<div className="font-bold text-base">Contact:</div>
-								<div className="mt-2">
-									<p className="text-base">Teky Lisdawati</p>
-									<p className="text-sm">@tekyy_ (Line) | 085212303723 (WA)</p>
-								</div>
-								<div className="mt-2">
-									<p className="text-base">Naila Fatina</p>
-									<p className="text-sm">
-										nailafatina (Line) | 081288728811 (WA)
-									</p>
+								<div className="font-bold text-base">Contact Person</div>
+								<div className="flex">
+									<div className="mt-2 flex-1 border-r border-white">
+										<p className="text-base">Teky Lisdawati</p>
+										<p className="text-sm">
+											LINE: <span className="font-bold">@tekyy_</span>
+										</p>
+										<p className="text-sm">
+											WhatsApp:{' '}
+											<a
+												className="font-bold hover:underline"
+												href="https://wa.me/085212303723"
+												target="_blank"
+												rel="noreferrer"
+											>
+												085212303723
+											</a>
+										</p>
+									</div>
+									<div className="pl-4 pt-2 flex-1 border-white">
+										<p className="text-base">Naila Fatina</p>
+										<p className="text-sm">
+											LINE: <span className="font-bold">nailafatina</span>
+										</p>
+										<p className="text-sm">
+											WhatsApp:{' '}
+											<a
+												className="font-bold hover:underline"
+												href="https://wa.me/081288728811"
+												target="_blank"
+												rel="noreferrer"
+											>
+												081288728811
+											</a>
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
