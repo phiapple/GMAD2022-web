@@ -75,19 +75,19 @@ export default function Home() {
 			</section>
 
 			{/* section 2: grand theme */}
-			<section className="py-24 text-p1 bg-green-light shadow-2xl">
+			<section className="py-24 text-p1 bg-green-dark shadow-2xl">
 				<div className="container mx-auto">
 					<h1
-						className="font-chromate text-c-yellow text-center pb-8 outlineText2"
+						className="font-chromate text-c-yellow text-center pb-8 outlineText"
 						data-aos="zoom-out"
 					>
 						Grand Theme
 					</h1>
 					<div
-						className="border-[3px] outline-gradient mt-8 rounded-2xl bg-gradient-to-br from-[rgba(255,255,255,0.2)] to-green-light relative"
+						className="border-[3px] outline-gradient mt-8 rounded-2xl bg-gradient-to-br from-[rgba(255,255,255,0.2)] to-green-dark relative"
 						data-aos="zoom-in"
 					>
-						<div className="grid grid-cols-1 lg:grid-cols-2 p-12">
+						<div className="grid grid-cols-1 lg:grid-cols-2 p-12 gap-4">
 							<div className="w-full aspect-video mx-auto rounded-3xl overflow-hidden">
 								<iframe
 									width="100%"
@@ -99,12 +99,14 @@ export default function Home() {
 									allowFullScreen
 								></iframe>
 							</div>
-							<div className="grid place-content-center">
-								<h2 className="text-xl lg:text-3xl font-bold text-center">
+							<div className="grid place-content-center row-start-1 lg:row-start-auto">
+								<h2 className="text-xl lg:text-3xl font-bold text-center text-white">
 									Advancement of Business Environment :
 								</h2>
+								<div className="h-4"></div>
 								<div className="text-2xl lg:text-4xl font-bold text-c-yellow text-center">
-									&ldquo;Facing off Uncertainty in Digitized Era&rdquo;
+									&ldquo;Facing off Uncertainty <br />
+									in Digitized Era&rdquo;
 								</div>
 							</div>
 						</div>
