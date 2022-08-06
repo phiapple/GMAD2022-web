@@ -25,10 +25,17 @@ const contact = () => {
 			{/* <section className="bg-[url('/images/bg/bg-homepage-1.png')] bg-cover bg-center"> */}
 			<section className="bg-green-light bg-cover bg-center">
 				<div className="container mx-auto max-w-3xl text-center py-20 flex flex-col items-center">
-					<h1 className="font-chromate text-c-yellow outlineText pb-16">
+					<h1
+						className="font-chromate text-c-yellow outlineText2 pb-16"
+						data-aos="zoom-out-up"
+					>
 						Contact Us
 					</h1>
-					<a href="mailto:pr.gmad@ugm.ac.id">
+					<a
+						href="mailto:pr.gmad@ugm.ac.id"
+						data-aos="zoom-out"
+						data-aos-delay="500"
+					>
 						<h4
 							role="button"
 							className="text-white border-b-2 border-c-yellow w-fit px-6 hover:text-c-yellow font-bold transition-all duration-150"
@@ -36,7 +43,11 @@ const contact = () => {
 							pr.gmad@ugm.ac.id
 						</h4>
 					</a>
-					<div className="flex flex-row items-center mt-3 lg:mt-8 space-x-4 lg:space-x-8">
+					<div
+						className="flex flex-row items-center mt-3 lg:mt-8 space-x-4 lg:space-x-8"
+						data-aos="zoom-out"
+						data-aos-delay="1000"
+					>
 						{SOSMED.map((sosmed, index) => (
 							<a
 								href={sosmed.redirectUrl}

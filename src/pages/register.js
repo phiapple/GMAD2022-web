@@ -30,10 +30,17 @@ const register = () => {
 			{/* Our Events */}
 			<section className="py-24 text-p1 bg-[url('/images/bg/bg-homepage-3.png')] bg-cover bg-center">
 				<div className="container mx-auto">
-					<h1 className="font-chromate text-c-yellow text-center outlineText2">
+					<h1
+						className="font-chromate text-c-yellow text-center outlineText2"
+						data-aos="zoom-out-up"
+					>
 						Main Events
 					</h1>
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 max-w-6xl mx-auto">
+					<div
+						className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 max-w-6xl mx-auto"
+						data-aos="zoom-out-down"
+						data-aos-delay="500"
+					>
 						{EVENTS.map((event, index) => (
 							<MainEventCard
 								key={index}
@@ -53,14 +60,12 @@ const register = () => {
 			<section className="py-24 text-p1 bg-green-light bg-cover bg-center text-white text-center">
 				<div className="container grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-16 md:gap-8">
 					{/* atalk */}
-					<div className="flex flex-col items-center">
-						<div className="w-[300px] h-[300px] rounded-3xl p-6 glassmo outline-gradient">
+					<div className="flex flex-col items-center" data-aos="fade-right">
+						<div className="relative w-[300px] h-[200px] rounded-3xl p-6 glassmo outline-gradient">
 							<Image
 								src="/images/homepage/mini-event-atalks-test.png"
-								alt="A-Tal5"
-								height={500}
-								width={500}
-								// layout="fixed"
+								alt="A-Talk"
+								layout="fill"
 								objectFit="cover"
 								objectPosition="center"
 								className="rounded-2xl"
@@ -77,19 +82,22 @@ const register = () => {
 							</p>
 							<div className="h-4"></div>
 							<div className="grid place-items-center">
-								<SolidButton text="Coming Soon" center />
+								<SolidButton text="Coming Soon" center disabled />
 							</div>
 						</div>
 					</div>
 
 					{/* nao */}
-					<div className="flex flex-col md:flex-col-reverse items-center">
-						<div className="w-[300px] h-[300px] rounded-3xl p-6 glassmo outline-gradient">
+					<div
+						className="flex flex-col md:flex-col-reverse items-center"
+						data-aos="fade-left"
+						data-aos-delay="500"
+					>
+						<div className="relative w-[300px] h-[200px] rounded-3xl p-6 glassmo outline-gradient">
 							<Image
 								src="/images/homepage/mini-event-nao-test.png"
 								alt="NAO"
-								height={500}
-								width={500}
+								layout="fill"
 								objectFit="cover"
 								objectPosition="center"
 								className="rounded-2xl"
