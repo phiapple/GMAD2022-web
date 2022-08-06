@@ -7,6 +7,7 @@ export default function Footer() {
 	return (
 		<>
 			<section className="px-10 lg:px-36 bg-gradient-to-b from-green-light to-green-dark">
+				<div className="h-[70px]"></div>
 				<div
 					className="copntainer max-w-3xl mx-auto w-full h-full py-10 rounded-3xl bg-c-yellow bg-cover bg-no-repeat"
 					data-aos="fade-down"
