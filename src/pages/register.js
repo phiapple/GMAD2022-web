@@ -56,11 +56,12 @@ const register = () => {
 					<div className="flex flex-col items-center">
 						<div className="w-[300px] h-[300px] rounded-3xl p-6 glassmo outline-gradient">
 							<Image
-								src="/images/homepage/event-atalks.png"
-								alt="A-Talk"
+								src="/images/homepage/mini-event-atalks-test.png"
+								alt="A-Tal5"
 								height={500}
 								width={500}
-								objectFit="cover"
+								// layout="fixed"
+								objectFit="cover"	
 								objectPosition="center"
 								className="rounded-2xl"
 							/>
@@ -75,7 +76,7 @@ const register = () => {
 							</p>
 							<div className="h-4"></div>
 							<div className="grid place-items-center">
-								<SolidButton text="Register A-Talk" center />
+								<SolidButton text="Coming Soon" center />
 							</div>
 						</div>
 					</div>
@@ -84,7 +85,7 @@ const register = () => {
 					<div className="flex flex-col md:flex-col-reverse items-center">
 						<div className="w-[300px] h-[300px] rounded-3xl p-6 glassmo outline-gradient">
 							<Image
-								src="/images/homepage/event-nao.png"
+								src="/images/homepage/mini-event-nao-test.png"
 								alt="NAO"
 								height={500}
 								width={500}
