@@ -95,7 +95,7 @@ function Nao() {
 	};
 
 	return (
-		<DefaultLayout title="GMAD 2022">
+		<DefaultLayout title="NAO - GMAD 2022">
 			<div className="relative h-screen w-full flex items-center justify-center bg-nao1 ">
 				<div className="absolute w-full h-full bg-green-dark/90"></div>
 				<div className="absolute w-full h-full z-10 flex items-center justify-center">
