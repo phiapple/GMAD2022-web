@@ -22,7 +22,8 @@ const SOSMED = [
 const contact = () => {
 	return (
 		<DefaultLayout title="Contact Us - GMAD 2022">
-			<section className="bg-[url('/images/bg/bg-homepage-1.png')] bg-cover bg-center">
+			{/* <section className="bg-[url('/images/bg/bg-homepage-1.png')] bg-cover bg-center"> */}
+			<section className="bg-green-light bg-cover bg-center">
 				<div className="container mx-auto max-w-3xl text-center py-20 flex flex-col items-center">
 					<h1 className="font-chromate text-c-yellow outlineText pb-16">
 						Contact Us
@@ -35,7 +36,7 @@ const contact = () => {
 							pr.gmad@ugm.ac.id
 						</h4>
 					</a>
-					<div className="flex flex-row items-center mt-8 space-x-4 md:space-x-12">
+					<div className="flex flex-row items-center mt-3 lg:mt-8 space-x-4 lg:space-x-8">
 						{SOSMED.map((sosmed, index) => (
 							<a
 								href={sosmed.redirectUrl}
@@ -43,7 +44,7 @@ const contact = () => {
 								rel="noreferrer"
 								key={index}
 							>
-								<div className="w-[60px] h-[60px] p-3 md:w-[100px] md:h-[100px] md:p-6 rounded-xl md:rounded-3xl outline-gradient bg-gradient-to-br hover:bg-gradient-to-tl from-[#1ea396] to-green-light transition-all duration-200">
+								<div className="w-[60px] h-[60px] p-3 lg:w-[100px] lg:h-[100px] lg:p-6 rounded-xl lg:rounded-3xl outline-gradient bg-gradient-to-br hover:bg-gradient-to-tl from-[#1ea396] to-green-light transition-all duration-200">
 									<Image
 										src={sosmed.imageUrl}
 										alt={sosmed.name}

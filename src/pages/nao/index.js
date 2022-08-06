@@ -17,70 +17,70 @@ const timelines = [
 		date: '05 - 31',
 		month: 'August',
 		eventName: 'Early Bird Registration',
-		imgSrc: null,
+		imgSrc: '/images/timeline/1.jpg',
 		link: ''
 	},
 	{
 		date: '01 - 16',
 		month: 'September',
 		eventName: 'Regular Registration',
-		imgSrc: null,
+		imgSrc: '/images/timeline/2.jpg',
 		link: ''
 	},
 	{
 		date: '01',
 		month: 'October',
 		eventName: 'Online Preliminary',
-		imgSrc: null,
+		imgSrc: '/images/timeline/3.jpg',
 		link: ''
 	},
 	{
 		date: '03',
 		month: 'October',
 		eventName: 'Top 25 Announcement',
-		imgSrc: null,
+		imgSrc: '/images/timeline/4.jpg',
 		link: ''
 	},
 	{
 		date: '04 - 13',
 		month: 'October',
 		eventName: 'Main Event Registration',
-		imgSrc: null,
+		imgSrc: '/images/timeline/5.jpg',
 		link: ''
 	},
 	{
 		date: '14',
 		month: 'October',
 		eventName: 'Technical Meeting Quarter dan Semifinal',
-		imgSrc: null,
+		imgSrc: '/images/timeline/6.jpg',
 		link: ''
 	},
 	{
 		date: '15 - 16',
 		month: 'October',
 		eventName: 'Main Event : Quarter dan Semifinal	',
-		imgSrc: null,
+		imgSrc: '/images/timeline/7.jpg',
 		link: ''
 	},
 	{
 		date: '21',
 		month: 'October',
 		eventName: 'Technical Meeting Final',
-		imgSrc: null,
+		imgSrc: '/images/timeline/8.jpg',
 		link: ''
 	},
 	{
 		date: '22',
 		month: 'October',
 		eventName: 'Main Event : Final',
-		imgSrc: null,
+		imgSrc: '/images/timeline/9.jpg',
 		link: ''
 	},
 	{
 		date: '23',
 		month: 'October',
 		eventName: 'Awarding Day',
-		imgSrc: null,
+		imgSrc: '/images/timeline/10.jpg',
 		link: ''
 	}
 ];
@@ -101,7 +101,7 @@ function Nao() {
 				<div className="absolute w-full h-full z-10 flex items-center justify-center">
 					<div className="text-center w-[75vw] lg:w-[60vw]">
 						<h1
-							className="py-4 font-chromate text-c-yellow outlineTextMiniLight"
+							className="py-4 font-chromate text-c-yellow outlineText"
 							data-aos="fade-up"
 						>
 							National Accounting Olympiad (NAO)
@@ -177,7 +177,7 @@ function Nao() {
 						{timelines.map((val, index) => {
 							return (
 								<SwiperSlide className="h-full" key={index}>
-									<div className="h-[45vh] lg:h-[55vh] w-[40vw] lg:w-[17.5vw] p-4 flex flex-col gap-4 rounded-2xl break-words profile-card outline-gradient">
+									<div className="h-[45vh] lg:h-[55vh] w-[40vw] lg:w-[17.5vw] p-4 pt-8 flex flex-col gap-4 rounded-2xl break-words profile-card outline-gradient">
 										<h2 className="font-bold leading-1 text-c-yellow text-shadow">
 											{val.date}
 										</h2>
@@ -187,10 +187,10 @@ function Nao() {
 										<p className="flex-grow font-bold text-white text-shadow">
 											{val.eventName}
 										</p>
-										<div className="relative h-[35%] w-full rounded-lg">
+										<div className="relative h-[40%] w-full rounded-lg">
 											<Image
 												className="rounded-lg"
-												src={val.src ?? '/images/bg/placeholder.png'}
+												src={val.imgSrc ?? '/images/bg/placeholder.png'}
 												alt="image preview"
 												layout="fill"
 												objectFit="cover"

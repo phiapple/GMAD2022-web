@@ -20,10 +20,11 @@ export default function MainEventCard({
 			}`}
 			role={!noButton && 'button'}
 			onClick={
-				!noButton &&
-				function () {
-					router.push(buttonPushTo);
-				}
+				!noButton
+					? function () {
+							router.push(buttonPushTo);
+					  }
+					: function () {}
 			}
 		>
 			<div className="w-[220px] mx-auto relative">

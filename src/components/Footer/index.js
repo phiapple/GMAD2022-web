@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { MedPart, Sponsor } from './source';
+import { MedPart, Sponsor, Sosmed } from './source';
 
 export default function Footer() {
 	return (
@@ -43,7 +43,7 @@ export default function Footer() {
 				<div className="absolute h-full w-full bg-gradient-to-b from-green-dark via-green-dark/80 to-green-dark/80"></div>
 				<div className="absolute z-10 h-full w-full px-4 lg:px-36 pt-36">
 					<h1
-						className="text-center outlineText text-c-yellow font-chromate"
+						className="text-center outlineText text-c-yellow font-chromate mb-8 lg:-mb-4"
 						data-aos="fade-up"
 					>
 						Our Past Partner
@@ -128,19 +128,18 @@ export default function Footer() {
 						alt="logo gmad"
 					/>
 				</div>
-				<div className="grid grid-cols-4 gap-2 lg:gap-4 text-white">
-					<a href="https://instagram.com/" target="_blank" rel="noreferrer">
-						<FaInstagram className="h-10 w-10 lg:h-12 lg:w-12 p-2 lg:p-3 rounded-full bg-c-blue-logo  cursor-pointer hover:scale-105" />
-					</a>
-					<a href="https://facebook.com/" target="_blank" rel="noreferrer">
-						<FaFacebook className="h-10 w-10 lg:h-12 lg:w-12 p-2 lg:p-3 rounded-full bg-c-blue-logo  cursor-pointer hover:scale-105" />
-					</a>
-					<a href="https://twitter.com/" target="_blank" rel="noreferrer">
-						<FaTwitter className="h-10 w-10 lg:h-12 lg:w-12 p-2 lg:p-3 rounded-full bg-c-blue-logo  cursor-pointer hover:scale-105" />
-					</a>
-					<a href="https://linkedin.com/" target="_blank" rel="noreferrer">
-						<FaLinkedin className="h-10 w-10 lg:h-12 lg:w-12 p-2 lg:p-3 rounded-full bg-c-blue-logo  cursor-pointer hover:scale-105" />
-					</a>
+				<div className="z-50 grid grid-cols-4 gap-2 lg:gap-4 text-white">
+					{Sosmed.map(sosmed => (
+						<a
+							key={sosmed.name}
+							href={sosmed.redirectUrl}
+							target="_blank"
+							rel="noreferrer"
+							role="button"
+						>
+							<sosmed.imageFa className="block h-10 w-10 lg:h-12 lg:w-12 p-2 lg:p-3 rounded-full bg-c-blue-logo  cursor-pointer hover:scale-105" />
+						</a>
+					))}
 				</div>
 			</footer>
 		</>
