@@ -168,9 +168,11 @@ export default function Home() {
 									<Image
 										src={sosmed.imageUrl}
 										alt={sosmed.name}
-										height={821}
-										width={379}
+										height={1844}
+										width={1125}
 										className="rounded-3xl"
+										// objectFit="contain"
+										// objectPosition="center"
 									/>
 								</div>
 							</a>
