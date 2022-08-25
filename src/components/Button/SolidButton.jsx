@@ -5,7 +5,7 @@ export default function SolidButton({
 }) {
 	return (
 		<div
-			role={!disabled && 'button'}
+			role={disabled ? 'none' : 'button'}
 			onClick={onClick}
 			className={`px-6 py-2 border-2 text-lg  font-bold rounded-full transition-all duration-200 w-fit ${
 				disabled

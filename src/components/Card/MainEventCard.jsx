@@ -18,7 +18,7 @@ export default function MainEventCard({
 			className={`p-6 border-2 stroke-gradient-1 rounded-[40px] text-white flex flex-col space-y-2 glassmo ${
 				!noButton && 'hover:-translate-y-1 transition-all duration-200'
 			}`}
-			role={!noButton && 'button'}
+			role={noButton ? 'none' : 'button'}
 			onClick={
 				!noButton
 					? function () {

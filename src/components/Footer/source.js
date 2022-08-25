@@ -59,7 +59,7 @@ const Sosmed = [
 		imageFa: FaLinkedin
 	},
 	{
-		name: 'linkedin',
+		name: 'youtube',
 		redirectUrl: 'https://www.youtube.com/channel/UCgsG8adGfw885oRYzu4o5tQ',
 		imageFa: FaYoutube
 	}
