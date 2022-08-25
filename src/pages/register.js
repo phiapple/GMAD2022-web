@@ -76,8 +76,9 @@ const register = () => {
 							<h4 className="font-bold">Acounting Talk (A-Talk)</h4>
 							<div className="h-2"></div>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Perspiciatis quis
+								Accounting Talk (A-Talk) is the biggest accounting seminar
+								intended for students, business, people, civil servants, and the
+								general public.
 							</p>
 							<div className="h-4"></div>
 							<div className="grid place-items-center">
@@ -107,8 +108,8 @@ const register = () => {
 							<h4 className="font-bold">National Accounting Olympiad (NAO)</h4>
 							<div className="h-2"></div>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Perspiciatis quis
+								National Accounting Olympiad (NAO) is one of the largest and
+								most prestigious Accounting Olympiads in Indonesia.
 							</p>
 							<div className="h-4"></div>
 							<a
