@@ -21,7 +21,7 @@ const timelines = [
 		link: ''
 	},
 	{
-		date: '01 - 16',
+		date: '01 - 28',
 		month: 'September',
 		eventName: 'Regular Registration',
 		imgSrc: '/images/timeline/2.jpg',
@@ -77,7 +77,7 @@ const timelines = [
 		link: ''
 	},
 	{
-		date: '23',
+		date: '29',
 		month: 'October',
 		eventName: 'Awarding Day',
 		imgSrc: '/images/timeline/10.jpg',
