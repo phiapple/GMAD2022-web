@@ -1,18 +1,18 @@
 import React from "react";
-// import Foto from "../../assets/img/test.jpeg";
+// import Foto from "/public/images/photo/test.png";
 import Image from "next/image";
 
-function ProfileCard() {
+function ProfileCard(props) {
   return (
     <>
-    <div className="inline-flex px-2 justify-center mx-4 pt-10">
-      <div className="relative max-w-sm mx-auto md:max-w-md mt-6 min-w-0 break-words bg-green-light w-full mb-6 shadow-lg rounded-xl profile-card">
+    <div className="sm:block inline-flex px-2 justify-center mx-4 pt-14 " data-aos={props.anime}>
+      <div className="relative max-w-sm mx-auto md:max-w-md mt-6 min-w-0 break-words bg-green-light w-full mb-6 shadow-lg rounded-3xl profile-card outline-gradient">
         <div className="px-6 ">
           <div className="flex flex-wrap justify-center">
             <div className="w-full flex justify-center">
               <div className="relative transform -translate-y-20">
                 <Image
-                  src={Foto}
+                  src={props.photo}
                   className="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[100px]"
                   width="150"
                   height="150"
@@ -46,12 +46,12 @@ function ProfileCard() {
             </div> */}
           </div>
           <div className="text-center transform -translate-y-14 mx-2">
-            <h3 className="text-2xl text-yellow font-bold leading-normal mb-1">
-              Hasan Chamdany Mc.D, Kf.C
+            <h3 className="text-2xl text-c-yellow font-bold leading-normal mb-1">
+              {props.name}
             </h3>
-            <div className="text-lg mt-0  text-white font-bold ">
+            <div className="text-lg mt-0  text-white font-bold mx-10">
               <i className="fas fa-map-marker-alt mr-2 text-slate-400 opacity-75"></i>
-              Software Engineer at <br></br> Phiapple Indonesia
+              {props.title}
             </div>
           </div>
           {/* <div className="mt-6 py-6 border-t border-slate-200 text-center">
