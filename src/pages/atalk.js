@@ -13,15 +13,15 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper';
 
 const theme1 = {
-	title: 'webinar',
-	ytext: "Accountings's Role:",
-	wtext: 'Providing Relevant and Timely Information for Corporate Investment'
+	title: 'WEBINAR #1',
+	ytext: "Business Digitalization:",
+	wtext: 'Navigating Risks and Opportunities for Optimal Growth'
 };
 
 const theme2 = {
-	title: 'talkshow',
-	ytext: 'Small Business Survival:',
-	wtext: 'Maximizing Financial Growth From Accounting Perspective'
+	title: 'WEBINAR #2',
+	ytext: 'Blockchain Technology:',
+	wtext: 'The Future Relevance of Accountancy Profession in Decentralized Finance'
 };
 
 function Atalks() {
@@ -130,7 +130,7 @@ function Atalks() {
 							className="max-w-3xl text-3xl sm:text-5xl capitalize tracking-widest text-c-yellow lg:text-7xl font-chromate leading-relaxed outlineText mx-auto"
 							data-aos="fade-up"
 						>
-							Our Speaker
+							Release Speaker & Moderator
 						</h1>
 					</div>
 
@@ -150,7 +150,7 @@ function Atalks() {
 									title="---------------------------------"
 								/>
 								<ProfileCard
-								anime="zoom-out"
+									anime="zoom-out"
 									photo="/images/photo/card.png"
 									name="COMING SOON"
 									title="---------------------------------"
@@ -161,14 +161,14 @@ function Atalks() {
 									className="max-w-3xl text-3xl sm:text-5xl capitalize tracking-widest text-c-yellow lg:text-7xl font-chromate leading-relaxed outlineText mx-auto"
 									data-aos="fade-up"
 								>
-									Moderator
+									Coming Soon
 								</h1>
 							</div>
 							<div className=" lg:flex justify-center pt-10">
 								<ProfileCard
-								anime="zoom-out"
+									anime="zoom-out"
 									photo="/images/photo/card.png"
-									name="Moderator"
+									name="Coming Soon"
 									title="-------------------------------------------------"
 								/>
 							</div>
@@ -182,13 +182,13 @@ function Atalks() {
 							</h3>
 							<div className=" lg:flex justify-center pt-10">
 								<ProfileCard
-								anime="zoom-out"
+									anime="zoom-out"
 									photo="/images/photo/card.png"
 									name="COMING SOON"
 									title="----------------------------"
 								/>
 								<ProfileCard
-								anime="zoom-out"
+									anime="zoom-out"
 									photo="/images/photo/card.png"
 									name="COMING SOON"
 									title="----------------------------"
@@ -199,14 +199,14 @@ function Atalks() {
 									className="max-w-3xl text-3xl sm:text-5xl capitalize tracking-widest text-c-yellow lg:text-7xl font-chromate leading-relaxed outlineText mx-auto"
 									data-aos="fade-up"
 								>
-									Moderator
+									Coming Soon
 								</h1>
 							</div>
 							<div className=" lg:flex justify-center pt-10">
 								<ProfileCard
-								anime="zoom-out"
+									anime="zoom-out"
 									photo="/images/photo/card.png"
-									name="Moderator"
+									name="Coming Soon"
 									title="-------------------------------------------------"
 								/>
 							</div>
@@ -240,8 +240,8 @@ function Atalks() {
 					target="_blank"
 					rel="noreferrer"
 				>
-					<h1 className="font-chromate text-center outlineText">
-						Register Now!
+					<h1 className="font-chromate text-center outlineText text-2xl sm:text-5xl">
+						Register Now! - Close Registration
 					</h1>
 				</a>
 			</div>
