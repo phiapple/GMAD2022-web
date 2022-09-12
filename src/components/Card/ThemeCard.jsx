@@ -1,13 +1,13 @@
 import React from 'react'
 
-const ThemeCard = ({title,ytext,wtext}) => {
+const ThemeCard = ({title,ytext,wtext,anime}) => {
   console.log(title)
 
 
   return (
     
-    <div className="inline-flex px-2 justify-center md:mx-8 mx-2  pt-2 md:pt-10">
-      <div className="relative max-w-sm mx-auto md:max-w-sm mt-6 min-w-0 break-words  mb-6 shadow-lg rounded-xl profile-card">
+    <div className="inline-flex px-2 justify-center lg:mx-8 mx-2  pt-2 md:pt-10 pb-2 md:pb-19" data-aos={anime}>
+      <div className="relative max-w-sm mx-auto md:max-w-sm mt-6  min-w-0 break-words  mb-6 pb-6 shadow-lg rounded-xl profile-card">
         <div className="px-6 py-10 ">
           
           <div className="flex flex-wrap justify-center pb-10">
