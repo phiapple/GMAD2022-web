@@ -236,12 +236,13 @@ function Atalks() {
 				<a
 					className="p-4 h-[60vmin] lg:h-[50vmin] w-[60vmin] lg:w-[50vmin] flex items-center justify-center glassmo rounded-full text-c-yellow outline-gradient cursor-pointer hover:bg-white/20 transition-all hover:scale-110"
 					data-aos="zoom-in"
-					href="https://docs.google.com/forms/d/e/1FAIpQLSfqNe4Xj2pRO0gA_yngVBUeCzLg9Ntk9H2KGJFFcxWhUZ0vyA/viewform?usp=sf_link*"
+					// href=""
 					target="_blank"
 					rel="noreferrer"
+					disabled
 				>
 					<h1 className="font-chromate text-center outlineText text-2xl sm:text-5xl">
-						Register Now! - Close Registration
+						Coming Soon
 					</h1>
 				</a>
 			</div>
