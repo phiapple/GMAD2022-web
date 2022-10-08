@@ -137,23 +137,27 @@ function Atalks() {
 					<Swiper navigation={true} modules={[Navigation]} className="mySwiper">
 						<SwiperSlide>
 							<h3
-								className="text-center text-white font-Gogh font-medium text-xl md:text-3xl "
+								className="text-center text-white font-Gogh font-medium text-3xl md:text-5xl "
 								data-aos="fade-up"
 							>
-								WEBINAR ACCOUNTING TALK
+								WEBINAR #1
 							</h3>
+							<h2 className="text-center text-white font-Gogh font-medium text-xl md:text-3xl pt-2"
+								data-aos="fade-up">
+							Business Digitalization: Navigating Risks and Opportunities for Optimal Growth
+							</h2>
 							<div className=" lg:flex justify-center pt-10">
 								<ProfileCard
 									anime="zoom-out"
-									photo="/images/photo/card.png"
-									name="COMING SOON"
-									title="---------------------------------"
+									photo="/images/photo/webinar1_teten.png"
+									name="Teten Masduki"
+									title="Ministry of Cooperatives and SMEs"
 								/>
 								<ProfileCard
 									anime="zoom-out"
-									photo="/images/photo/card.png"
-									name="COMING SOON"
-									title="---------------------------------"
+									photo="/images/photo/webinar1_yanuar.png"
+									name="Yanuar Kurniawan"
+									title="SVP Organization and Talent Development Lazada Indonesia"
 								/>
 							</div>
 							<div className=" pt-8 md:pt-28 pb-8 md:pb-10  test-2">
@@ -161,37 +165,41 @@ function Atalks() {
 									className="max-w-3xl text-3xl sm:text-5xl capitalize tracking-widest text-c-yellow lg:text-7xl font-chromate leading-relaxed outlineText mx-auto"
 									data-aos="fade-up"
 								>
-									Coming Soon
+									Moderator
 								</h1>
 							</div>
 							<div className=" lg:flex justify-center pt-10">
 								<ProfileCard
 									anime="zoom-out"
-									photo="/images/photo/card.png"
-									name="Coming Soon"
-									title="-------------------------------------------------"
+									photo="/images/photo/moderator1.png"
+									name="Arhamma Madhani Addilansa"
+									title="Economics Undergraduate Student of Universitas Gadjah Mada"
 								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
 							<h3
-								className="text-center text-white font-Gogh font-medium text-xl md:text-3xl "
+								className="text-center text-white font-Gogh font-medium text-3xl md:text-5xl "
 								data-aos="fade-up"
 							>
-								TALKSHOW ACCOUNTING TALK
+								WEBINAR #2
 							</h3>
+							<h2 className="text-center text-white font-Gogh font-medium text-xl md:text-3xl pt-2"
+								data-aos="fade-up">
+							Blockchain Technology: The Future Relevance of Accountancy Profession in Decentralized Finance
+							</h2>
 							<div className=" lg:flex justify-center pt-10">
 								<ProfileCard
 									anime="zoom-out"
-									photo="/images/photo/card.png"
-									name="COMING SOON"
-									title="----------------------------"
+									photo="/images/photo/webinar2_anthony.png"
+									name="Anthony Feryanto"
+									title="Partner at Johannes Juara & Rekan"
 								/>
 								<ProfileCard
 									anime="zoom-out"
-									photo="/images/photo/card.png"
-									name="COMING SOON"
-									title="----------------------------"
+									photo="/images/photo/webinar2_teguh.png"
+									name="Teguh Kurniawan"
+									title="Co-Founder and COO of Tokocrypto"
 								/>
 							</div>
 							<div className=" pt-8 md:pt-28 pb-8 md:pb-10  test-2">
@@ -199,15 +207,15 @@ function Atalks() {
 									className="max-w-3xl text-3xl sm:text-5xl capitalize tracking-widest text-c-yellow lg:text-7xl font-chromate leading-relaxed outlineText mx-auto"
 									data-aos="fade-up"
 								>
-									Coming Soon
+									Moderator
 								</h1>
 							</div>
 							<div className=" lg:flex justify-center pt-10">
 								<ProfileCard
 									anime="zoom-out"
-									photo="/images/photo/card.png"
-									name="Coming Soon"
-									title="-------------------------------------------------"
+									photo="/images/photo/moderator2.png"
+									name="Achmad Masyhadul Amin"
+									title="Lecturer in Faculty of Economics and Business at Universitas Gadjah Mada"
 								/>
 							</div>
 						</SwiperSlide>
@@ -236,13 +244,13 @@ function Atalks() {
 				<a
 					className="p-4 h-[60vmin] lg:h-[50vmin] w-[60vmin] lg:w-[50vmin] flex items-center justify-center glassmo rounded-full text-c-yellow outline-gradient cursor-pointer hover:bg-white/20 transition-all hover:scale-110"
 					data-aos="zoom-in"
-					// href=""
+					href="http://bit.ly/RegistrationFormA-Talk2022"
 					target="_blank"
 					rel="noreferrer"
 					disabled
 				>
 					<h1 className="font-chromate text-center outlineText text-2xl sm:text-5xl">
-						Coming Soon
+						Register Now!
 					</h1>
 				</a>
 			</div>
