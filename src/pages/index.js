@@ -20,7 +20,7 @@ const EVENTS = [
 		imageUrl: '/images/homepage/event-atalks.png',
 		imageAlt: 'Atalk',
 		buttonText: 'learn more',
-		buttonPushTo: '/atalks'
+		buttonPushTo: '/atalk'
 	}
 ];
 
