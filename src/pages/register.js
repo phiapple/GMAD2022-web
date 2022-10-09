@@ -20,7 +20,7 @@ const EVENTS = [
 		imageUrl: '/images/homepage/event-atalks.png',
 		imageAlt: 'Atalk',
 		buttonText: 'learn more',
-		buttonPushTo: '/atalks'
+		buttonPushTo: '/atalk'
 	}
 ];
 
@@ -81,9 +81,14 @@ const register = () => {
 								general public.
 							</p>
 							<div className="h-4"></div>
-							<div className="grid place-items-center">
-								<SolidButton text="Coming Soon" center disabled />
-							</div>
+							<a
+								className="grid place-items-center"
+								href="http://bit.ly/RegistrationFormA-Talk2022"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<SolidButton text="Register A-Talk" center />
+							</a>
 						</div>
 					</div>
 
